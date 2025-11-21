@@ -90,57 +90,75 @@
     "tags": ["snowman", "winter"]
   },
   {
-    "id": "christmas-snowman",
-    "title": "Snowman with Scarf",
-    "category": "Christmas",
+    "id": "dinosaur-1",
+    "title": "Cute Dinosaur",
+    "category": "Dinosaurs",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
-    "image": "/assets/coloring/christmas/christmas-snowman.png",
-    "tags": ["snowman", "winter"]
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-1.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-1.png",
+    "tags": ["dinosaur", "Roar"]
   },
   {
-    "id": "christmas-snowman",
-    "title": "Snowman with Scarf",
-    "category": "Christmas",
+    "id": "dinosaur-2",
+    "title": "Cute Dinosaur",
+    "category": "Dinosaurs",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
-    "image": "/assets/coloring/christmas/christmas-snowman.png",
-    "tags": ["snowman", "winter"]
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-2.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-2.png",
+    "tags": ["dinosaur", "Roar"]
   },
   {
-    "id": "christmas-snowman",
-    "title": "Snowman with Scarf",
-    "category": "Christmas",
+    "id": "dinosaur-3",
+    "title": "Cute Dinosaur",
+    "category": "Dinosaurs",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
-    "image": "/assets/coloring/christmas/christmas-snowman.png",
-    "tags": ["snowman", "winter"]
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-3.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-3.png",
+    "tags": ["dinosaur", "Roar"]
   },
   {
-    "id": "christmas-snowman",
-    "title": "Snowman with Scarf",
-    "category": "Christmas",
+    "id": "dinosaur-4",
+    "title": "Cute Dinosaur",
+    "category": "Dinosaurs",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
-    "image": "/assets/coloring/christmas/christmas-snowman.png",
-    "tags": ["snowman", "winter"]
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-4.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-4.png",
+    "tags": ["dinosaur", "Roar"]
   },
   {
-    "id": "christmas-snowman",
-    "title": "Snowman with Scarf",
-    "category": "Christmas",
+    "id": "dinosaur-5",
+    "title": "Dinosaur",
+    "category": "Dinosaurs",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
-    "image": "/assets/coloring/christmas/christmas-snowman.png",
-    "tags": ["snowman", "winter"]
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-5.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-5.png",
+    "tags": ["dinosaur", "Roar"]
   },
   {
-    "id": "christmas-snowman",
-    "title": "Snowman with Scarf",
-    "category": "Christmas",
+    "id": "dinosaur-6",
+    "title": "T-Rex Dinosaur",
+    "category": "Dinosaurs",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
-    "image": "/assets/coloring/christmas/christmas-snowman.png",
-    "tags": ["snowman", "winter"]
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-6.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-6.png",
+    "tags": ["dinosaur", "Roar"]
   }
+  {
+    "id": "dinosaur-7",
+    "title": "Dinosaur",
+    "category": "Dinosaurs",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-7.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-7.png",
+    "tags": ["dinosaur", "Roar"]
+  },
+  {
+    "id": "dinosaur-8",
+    "title": "T-Rex Dinosaur",
+    "category": "Dinosaurs",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/dinosaurs/dinosaur-8.pdf",
+    "image": "/assets/coloring/dinosaurs/dinosaur-8.png",
+    "tags": ["dinosaur", "Roar"]
+  },
 ]
