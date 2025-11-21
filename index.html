@@ -11,12 +11,12 @@
   <meta name="robots" content="index,follow" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-content">
       <div class="logo">
-        <!-- Make sure this file exists: /assets/logo/little-color-lab.png -->
         <img
           src="/assets/logo/little-color-lab.png"
           alt="Little Color Lab Logo"
@@ -31,9 +31,10 @@
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-content">
+
         <img
           src="/assets/logo/little-color-lab.png"
           alt="Little Color Lab Logo"
@@ -43,8 +44,9 @@
         <div class="hero-text">
           <h1>Printable Coloring Pages for Little Creators</h1>
           <p>
-            Little Color Lab gives teachers and parents simple, black-and-white coloring pages
-            by holiday, theme, and age. Download as PDFs and print in seconds.
+            Little Color Lab gives teachers and parents simple, clean,
+            black-and-white coloring pages organized by holiday, theme, and
+            age. Download as PDFs and print instantly.
           </p>
           <a href="#browse" class="btn-primary">Browse Coloring Pages</a>
         </div>
@@ -54,7 +56,9 @@
     <!-- Browse Section -->
     <section id="browse" class="browse-section">
       <div class="container">
+
         <div class="filters">
+          <!-- Search -->
           <div class="filter-group">
             <label for="search">Search</label>
             <input
@@ -64,13 +68,15 @@
             />
           </div>
 
+          <!-- Categories -->
           <div class="filter-group">
             <span class="filter-label">Categories</span>
             <div id="category-buttons" class="category-buttons">
-              <!-- Filled by app.js -->
+              <!-- Populated via JS -->
             </div>
           </div>
 
+          <!-- Age Range -->
           <div class="filter-group">
             <label for="ageRange">Age Range</label>
             <select id="ageRange">
@@ -85,26 +91,36 @@
         </div>
 
         <div id="grid" class="sheet-grid">
-          <!-- Cards injected by app.js -->
+          <!-- Cards go here -->
         </div>
 
         <div id="emptyState" class="empty-state hidden">
-          No coloring pages found for your filters. Try clearing the search or picking a different category.
+          No coloring pages found for your filters. Try clearing search or switching categories.
         </div>
+
       </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="about-section">
       <div class="container">
         <h2>About Little Color Lab</h2>
+
+        <img
+          src="/assets/logo/little-color-lab.png"
+          alt="Little Color Lab Logo"
+          class="footer-logo"
+        />
+
         <p>
-          Little Color Lab is built for busy teachers and parents who just need clean,
-          kid-friendly coloring pages without pop-ups or clutter.
+          Little Color Lab is built for busy teachers and parents who want clean,
+          kid-friendly coloring pages without ads, pop-ups, or clutter.
         </p>
+
         <p>
-          Browse by holiday, theme, or age range, pick your favorites, and print.
-          New pages are added over time so your little artists always have something fun to color.
+          Browse by holiday or theme, pick your favorites, and print. New pages
+          are added regularly so your little artists always have something fun
+          to color.
         </p>
       </div>
     </section>
@@ -113,11 +129,6 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <img
-        src="/assets/logo/little-color-lab.png"
-        alt="Little Color Lab Logo"
-        class="footer-logo"
-      />
       <p>&copy; <span id="year"></span> Little Color Lab. All rights reserved.</p>
     </div>
   </footer>
