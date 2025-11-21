@@ -233,4 +233,67 @@
     "image": "/assets/coloring/sports/sports-soccer.png",
     "tags": ["sports", "soccer"]
   }
+  {
+    "id": "halloween-dracula",
+    "title": "Kid Dracula",
+    "category": "Halloween",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/halloween/halloween-dracula.pdf",
+    "image": "/assets/coloring/halloween/halloween-dracula.png",
+    "tags": ["halloween", "spooky"]
+  },
+  {
+    "id": "halloween-ghost",
+    "title": "Halloween Ghost",
+    "category": "Halloween",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/halloween/halloween-ghost.pdf",
+    "image": "/assets/coloring/halloween/halloween-ghost.png",
+    "tags": ["halloween", "spooky"]
+  },
+  {
+    "id": "halloween-ghostpumpkin",
+    "title": "Halloween Ghost and Jackolantern",
+    "category": "Halloween",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/halloween/halloween-ghostpumpkin.pdf",
+    "image": "/assets/coloring/halloween/halloween-ghostpumpkin.png",
+    "tags": ["halloween", "spooky"]
+  },
+  {
+    "id": "halloween-hauntedhouse",
+    "title": "Halloween Haunted House",
+    "category": "Halloween",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/halloween/halloween-hauntedhouse.pdf",
+    "image": "/assets/coloring/halloween/halloween-hauntedhouse.png",
+    "tags": ["halloween", "spooky"]
+  },
+  {
+    "id": "halloween-hauntedhouse-2",
+    "title": "Halloween Haunted Mansion",
+    "category": "Halloween",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/halloween/halloween-hauntedhouse-2.pdf",
+    "image": "/assets/coloring/halloween/halloween-hauntedhouse-2.png",
+    "tags": ["halloween", "spooky"]
+  },
+  {
+    "id": "halloween-jackolantern",
+    "title": "Jack-O-Lantern with Witch Hat",
+    "category": "Halloween",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/halloween/halloween-jackolantern.pdf",
+    "image": "/assets/coloring/halloween/halloween-jackolantern.png",
+    "tags": ["halloween", "spooky"]
+  },
+  {
+    "id": "halloween-scarecrow",
+    "title": "Halloween Scarecrow",
+    "category": "Halloween",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/halloween/halloween-scarecrow.pdf",
+    "image": "/assets/coloring/halloween/halloween-scarecrow.png",
+    "tags": ["halloween", "spooky"]
+  }
 ]
