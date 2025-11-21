@@ -40,8 +40,8 @@
     "title": "Santa Claus",
     "category": "Christmas",
     "ageRange": "4-7",
-    "pdf": "/assets/coloring/animals/christmas-santa.pdf",
-    "image": "/assets/coloring/animals/christmas-santa.png",
+    "pdf": "/assets/coloring/christmas/christmas-santa.pdf",
+    "image": "/assets/coloring/christmas/christmas-santa.png",
     "tags": ["santa", "christmas"]
   },
   {
@@ -49,8 +49,8 @@
     "title": "Snowman with Scarf",
     "category": "Christmas",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/animals/christmas-snowman.pdf",
-    "image": "/assets/coloring/animals/christmas-snowman.png",
+    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman.png",
     "tags": ["snowman", "winter"]
   }
 ]
