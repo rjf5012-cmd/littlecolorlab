@@ -1,0 +1,56 @@
+[
+  {
+    "id": "halloween-witch-1",
+    "title": "Friendly Witch on a Broom",
+    "category": "Halloween",
+    "ageRange": "4-6",
+    "pdf": "/assets/coloring/halloween/witch-1.pdf",
+    "image": "/assets/coloring/halloween/witch-1-thumb.jpg",
+    "tags": ["witch", "broom", "stars"]
+  },
+  {
+    "id": "halloween-pumpkin-1",
+    "title": "Smiling Pumpkin",
+    "category": "Halloween",
+    "ageRange": "3-5",
+    "pdf": "/assets/coloring/halloween/pumpkin-1.pdf",
+    "image": "/assets/coloring/halloween/pumpkin-1-thumb.jpg",
+    "tags": ["pumpkin", "jack-o-lantern"]
+  },
+  {
+    "id": "christmas-tree-1",
+    "title": "Christmas Tree with Presents",
+    "category": "Christmas",
+    "ageRange": "5-8",
+    "pdf": "/assets/coloring/christmas/tree-1.pdf",
+    "image": "/assets/coloring/christmas/tree-1-thumb.jpg",
+    "tags": ["tree", "presents", "ornaments"]
+  },
+  {
+    "id": "christmas-santa-1",
+    "title": "Santa with Gift Sack",
+    "category": "Christmas",
+    "ageRange": "5-9",
+    "pdf": "/assets/coloring/christmas/santa-1.pdf",
+    "image": "/assets/coloring/christmas/santa-1-thumb.jpg",
+    "tags": ["santa", "gifts"]
+  },
+  {
+    "id": "animals-lion-1",
+    "title": "Cute Lion",
+    "category": "Animals",
+    "ageRange": "4-7",
+    "pdf": "/assets/coloring/animals/lion-1.pdf",
+    "image": "/assets/coloring/animals/lion-1-thumb.jpg",
+    "tags": ["lion", "jungle"]
+  },
+  {
+    "id": "animals-dinosaur-1",
+    "title": "Friendly Dinosaur",
+    "category": "Animals",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/animals/dinosaur-1.pdf",
+    "image": "/assets/coloring/animals/dinosaur-1-thumb.jpg",
+    "tags": ["dinosaur", "t-rex"]
+  }
+]
