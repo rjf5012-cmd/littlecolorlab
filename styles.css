@@ -208,3 +208,10 @@ img {
 
 .sheet-card-title {
   font-size: 0.95rem;
+  
+.footer-logo {
+  height: 32px;
+  width: auto;
+  margin: 0 auto 0.5rem auto;
+  object-fit: contain;
+}
