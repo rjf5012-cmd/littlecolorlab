@@ -53,4 +53,94 @@
     "image": "/assets/coloring/christmas/christmas-snowman.png",
     "tags": ["snowman", "winter"]
   }
+  {
+    "id": "christmas-snowman-present-tree",
+    "title": "Snowman with Present",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman-present-tree.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman-present-tree.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman-skating",
+    "title": "Snowman Ice Skating",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman-skating.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman-skating.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman-tree",
+    "title": "Snowman Decorating Christmas Tree",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman-tree.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman-tree.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman-tree-clouds",
+    "title": "Snowman with Christmas Tree",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman-tree-clouds.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman-tree-clouds.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman",
+    "title": "Snowman with Scarf",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman",
+    "title": "Snowman with Scarf",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman",
+    "title": "Snowman with Scarf",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman",
+    "title": "Snowman with Scarf",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman",
+    "title": "Snowman with Scarf",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman.png",
+    "tags": ["snowman", "winter"]
+  }
+  {
+    "id": "christmas-snowman",
+    "title": "Snowman with Scarf",
+    "category": "Christmas",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
+    "image": "/assets/coloring/christmas/christmas-snowman.png",
+    "tags": ["snowman", "winter"]
+  }
 ]
