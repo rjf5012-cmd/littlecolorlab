@@ -1,12 +1,12 @@
 [
   {
-    "id": "halloween-witch-1",
+    "id": "animals-puppybasketball",
     "title": "Friendly Witch on a Broom",
-    "category": "Halloween",
+    "category": "Animals",
     "ageRange": "4-6",
-    "pdf": "/assets/coloring/halloween/witch-1.pdf",
-    "image": "/assets/coloring/halloween/witch-1-thumb.jpg",
-    "tags": ["witch", "broom", "stars"]
+    "pdf": "/assets/coloring/halloween/animals-puppybasketball.pdf",
+    "image": "/assets/coloring/halloween/animals-puppybasketball.png",
+    "tags": ["dog", "basketball", "puppy"]
   },
   {
     "id": "halloween-pumpkin-1",
