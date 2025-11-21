@@ -27,30 +27,30 @@
     "tags": ["holly", "presents", "ornaments"]
   },
   {
-    "id": "christmas-santa-1",
-    "title": "Santa with Gift Sack",
+    "id": "christmas-reindeer",
+    "title": "Reindeer With Ornaments",
     "category": "Christmas",
     "ageRange": "5-9",
-    "pdf": "/assets/coloring/christmas/santa-1.pdf",
-    "image": "/assets/coloring/christmas/santa-1-thumb.jpg",
-    "tags": ["santa", "gifts"]
+    "pdf": "/assets/coloring/christmas/christmas-reindeer.pdf",
+    "image": "/assets/coloring/christmas/christmas-reindeer.png",
+    "tags": ["reindeer", "ornaments"]
   },
   {
-    "id": "animals-lion-1",
-    "title": "Cute Lion",
-    "category": "Animals",
+    "id": "christmas-santa",
+    "title": "Santa Claus",
+    "category": "Christmas",
     "ageRange": "4-7",
-    "pdf": "/assets/coloring/animals/lion-1.pdf",
-    "image": "/assets/coloring/animals/lion-1-thumb.jpg",
-    "tags": ["lion", "jungle"]
+    "pdf": "/assets/coloring/animals/christmas-santa.pdf",
+    "image": "/assets/coloring/animals/christmas-santa.png",
+    "tags": ["santa", "christmas"]
   },
   {
-    "id": "animals-dinosaur-1",
-    "title": "Friendly Dinosaur",
-    "category": "Animals",
+    "id": "christmas-snowman",
+    "title": "Snowman with Scarf",
+    "category": "Christmas",
     "ageRange": "3-6",
-    "pdf": "/assets/coloring/animals/dinosaur-1.pdf",
-    "image": "/assets/coloring/animals/dinosaur-1-thumb.jpg",
-    "tags": ["dinosaur", "t-rex"]
+    "pdf": "/assets/coloring/animals/christmas-snowman.pdf",
+    "image": "/assets/coloring/animals/christmas-snowman.png",
+    "tags": ["snowman", "winter"]
   }
 ]
