@@ -275,7 +275,7 @@ img {
 
 /* Footer section logo — half size */
 .footer-logo {
-  height: 16px;
+  height: 300px;
   width: auto;
   object-fit: contain;
   margin: 0 auto 1rem auto;
