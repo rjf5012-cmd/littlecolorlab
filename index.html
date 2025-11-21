@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Little Color Lab | Free Printable Coloring Pages for Kids</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Little Color Lab offers free printable coloring pages for kids. Browse by holiday, theme, and age range—perfect for teachers and parents."
+  />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <!-- Make sure this file exists: /assets/logo/little-color-lab.png -->
+        <img
+          src="/assets/logo/little-color-lab.png"
+          alt="Little Color Lab Logo"
+          class="site-logo"
+        />
+      </div>
+      <nav class="main-nav">
+        <a href="#browse">Browse Pages</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+        <img
+          src="/assets/logo/little-color-lab.png"
+          alt="Little Color Lab Logo"
+          class="hero-logo"
+        />
+
+        <div class="hero-text">
+          <h1>Printable Coloring Pages for Little Creators</h1>
+          <p>
+            Little Color Lab gives teachers and parents simple, black-and-white coloring pages
+            by holiday, theme, and age. Download as PDFs and print in seconds.
+          </p>
+          <a href="#browse" class="btn-primary">Browse Coloring Pages</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browse Section -->
+    <section id="browse" class="browse-section">
+      <div class="container">
+        <div class="filters">
+          <div class="filter-group">
+            <label for="search">Search</label>
+            <input
+              type="text"
+              id="search"
+              placeholder="Search by name or tag (e.g. witch, dinosaur, Christmas)"
+            />
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label">Categories</span>
+            <div id="category-buttons" class="category-buttons">
+              <!-- Filled by app.js -->
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="ageRange">Age Range</label>
+            <select id="ageRange">
+              <option value="">All ages</option>
+              <option value="3-5">3–5</option>
+              <option value="4-6">4–6</option>
+              <option value="5-8">5–8</option>
+              <option value="5-9">5–9</option>
+              <option value="7-9">7–9</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="grid" class="sheet-grid">
+          <!-- Cards injected by app.js -->
+        </div>
+
+        <div id="emptyState" class="empty-state hidden">
+          No coloring pages found for your filters. Try clearing the search or picking a different category.
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Little Color Lab</h2>
+        <p>
+          Little Color Lab is built for busy teachers and parents who just need clean,
+          kid-friendly coloring pages without pop-ups or clutter.
+        </p>
+        <p>
+          Browse by holiday, theme, or age range, pick your favorites, and print.
+          New pages are added over time so your little artists always have something fun to color.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <img
+        src="/assets/logo/little-color-lab.png"
+        alt="Little Color Lab Logo"
+        class="footer-logo"
+      />
+      <p>&copy; <span id="year"></span> Little Color Lab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
