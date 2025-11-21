@@ -51,6 +51,7 @@ img {
   padding: 0.75rem 0;
 }
 
+/* Header Logo */
 .site-logo {
   height: 40px;
   width: auto;
@@ -81,8 +82,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  max-width: 480px;     /* the reference width for headline + paragraph */
-  margin: 0 auto;
 }
 
 .hero-logo {
@@ -93,22 +92,25 @@ img {
 }
 
 .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+  max-width: 600px;
 }
 
-/* ⭐ FINAL FIX: paragraph width matches hero container width */
-.hero p,
-.hero-text p {
-  max-width: 480px;               /* PERFECT alignment with headline */
-  margin: 0.5rem auto 0 auto;
+.hero p {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
   font-size: 1rem;
   line-height: 1.5;
-  text-align: center;
+  width: 480px;
 }
 
 .btn-primary {
@@ -120,6 +122,7 @@ img {
   color: white;
   font-weight: 600;
   font-size: 0.95rem;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -127,7 +130,48 @@ img {
 }
 
 /* ------------------------------ */
-/* Filters / Browse Section       */
+/* Category Landing Section       */
+/* ------------------------------ */
+
+.category-landing-links {
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.category-landing-links h2 {
+  margin-bottom: 0.5rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.category-link {
+  padding: 0.75rem;
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: block;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2563eb;
+  text-decoration: none; /* not underlined by default */
+  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.category-link:hover {
+  background: #eff6ff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  color: #1d4ed8;
+  text-decoration: underline; /* underline only on hover */
+  text-underline-offset: 2px;
+}
+
+/* ------------------------------ */
+/* Browse Section                 */
 /* ------------------------------ */
 
 .browse-section {
@@ -289,49 +333,32 @@ img {
 }
 
 /* ------------------------------ */
-/* Recommended Supplies Section   */
+/* Supplies Section               */
 /* ------------------------------ */
 
 .supplies-section {
   padding: 2rem 0 3rem;
   border-top: 1px solid #e5e7eb;
-  background: #f9fafb;
-  text-align: center;
-}
-
-.supplies-section h2 {
-  margin-bottom: 0.5rem;
-}
-
-.supplies-section p {
-  max-width: 40rem;
-  margin: 0 auto 1rem auto;
-  font-size: 0.95rem;
-  color: #4b5563;
 }
 
 .supplies-list {
+  margin-top: 1rem;
+  padding-left: 0;
   list-style: none;
-  padding: 0;
-  margin: 1rem auto 0 auto;
-  max-width: 40rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .supplies-list li {
+  margin-bottom: 0.6rem;
   font-size: 0.95rem;
 }
 
 .supplies-list a {
   color: #2563eb;
   text-decoration: underline;
-  font-weight: 500;
 }
 
 .supplies-list a:hover {
-  text-decoration: none;
+  color: #1d4ed8;
 }
 
 /* ------------------------------ */
@@ -360,5 +387,10 @@ img {
 
   .hero h1 {
     font-size: 1.8rem;
+  }
+
+  .hero p {
+    width: 100%;
+    max-width: 340px;
   }
 }

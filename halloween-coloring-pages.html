@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Halloween Coloring Pages for Kids | Little Color Lab</title>
+
+  <!-- Google AdSense -->
+  <script async 
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509398148166447"
+    crossorigin="anonymous">
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Free printable Halloween coloring pages for kids. Pumpkins, ghosts, witches, bats, and more spooky-fun coloring sheets for preschool and elementary classrooms."
+  />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Little Color Lab" />
+  <link rel="canonical" href="https://littlecolorlab.com/halloween-coloring-pages.html" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta property="og:title" content="Halloween Coloring Pages for Kids | Little Color Lab" />
+  <meta property="og:description" content="Print free Halloween coloring sheets: pumpkins, ghosts, witches, bats, and more spooky-fun pages for kids." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://littlecolorlab.com/halloween-coloring-pages.html" />
+  <meta property="og:image" content="https://littlecolorlab.com/apple-touch-icon.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Halloween Coloring Pages for Kids | Little Color Lab" />
+  <meta name="twitter:description" content="Free printable Halloween coloring pages for kids and classrooms." />
+  <meta name="twitter:image" content="https://littlecolorlab.com/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+
+<body data-default-category="Halloween">
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="/assets/logo/little-color-lab.png" alt="Little Color Lab Logo" class="site-logo" />
+      </div>
+      <nav class="main-nav">
+        <a href="/#browse">Browse Pages</a>
+        <a href="/#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <img src="/assets/logo/little-color-lab.png" alt="Little Color Lab Logo" class="hero-logo" loading="lazy" />
+        <div class="hero-text">
+          <h1>Halloween Coloring Pages for Kids</h1>
+          <p>
+            Print free Halloween coloring pages featuring friendly pumpkins, ghosts, witches, bats, candy,
+            and more spooky-fun designs. These black-and-white coloring sheets are perfect for preschool,
+            kindergarten, and elementary school Halloween parties or fall classroom activities.
+          </p>
+          <a href="#browse" class="btn-primary">Browse Halloween Coloring Pages</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="browse" class="browse-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Browse Halloween Coloring Sheets</h2>
+          <p>
+            Use the filters below to find age-appropriate Halloween coloring pages. Choose from pumpkins, ghosts,
+            witches, haunted houses, trick-or-treat scenes, and more. All pages are free to download and print.
+          </p>
+        </header>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label for="search">Search</label>
+            <input id="search" type="text" placeholder="Search Halloween sheets (pumpkin, ghost, witch...)" />
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label">Categories</span>
+            <div id="category-buttons" class="category-buttons"></div>
+          </div>
+
+          <div class="filter-group">
+            <label for="ageRange">Age Range</label>
+            <select id="ageRange">
+              <option value="">All ages</option>
+              <option value="3-5">3–5</option>
+              <option value="4-6">4–6</option>
+              <option value="5-8">5–8</option>
+              <option value="5-9">5–9</option>
+              <option value="7-9">7–9</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="grid" class="sheet-grid"></div>
+        <div id="emptyState" class="empty-state hidden">
+          No Halloween coloring pages found for your filters. Try adjusting search or age range.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Little Color Lab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

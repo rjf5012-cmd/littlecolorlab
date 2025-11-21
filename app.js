@@ -2,8 +2,9 @@
 
 const DATA_URL = "/data/coloring-sheets.json";
 
+const defaultCategory = document.body.dataset.defaultCategory || "All";
 let allSheets = [];
-let activeCategory = "All";
+let activeCategory = defaultCategory;
 
 const gridEl = document.getElementById("grid");
 const categoryButtonsEl = document.getElementById("category-buttons");
@@ -44,13 +45,15 @@ function initCategories() {
 
   // "All" button
   const allBtn = createCategoryButton("All");
-  allBtn.classList.add("active");
   categoryButtonsEl.appendChild(allBtn);
 
   categories.forEach((cat) => {
     const btn = createCategoryButton(cat);
     categoryButtonsEl.appendChild(btn);
   });
+
+  // Highlight correct button based on defaultCategory
+  updateActiveCategoryButton(activeCategory);
 }
 
 function createCategoryButton(category) {
@@ -132,7 +135,7 @@ function createSheetCard(sheet) {
   const img = document.createElement("img");
   img.src = sheet.image;
   img.alt = sheet.title;
-  img.loading = "lazy"; // 🔥 Lazy loading for thumbnails
+  img.loading = "lazy"; // Lazy loading for thumbnails
   imageWrapper.appendChild(img);
 
   const title = document.createElement("h3");

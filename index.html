@@ -58,7 +58,8 @@
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Cache-busted stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 
 <body>
@@ -83,14 +84,12 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-content">
-
         <img
           src="/assets/logo/little-color-lab.png"
           alt="Little Color Lab Logo"
           class="hero-logo"
           loading="lazy"
         />
-
         <div class="hero-text">
           <h1>Printable Coloring Pages for Little Creators</h1>
           <p>
@@ -105,10 +104,30 @@
       </div>
     </section>
 
+    <!-- Popular Categories -->
+    <section id="categories" class="category-landing-links">
+      <div class="container">
+        <h2>Popular Coloring Categories</h2>
+        <p>Browse themed collections of free printable coloring pages for kids.</p>
+
+        <div class="category-grid">
+          <a href="/halloween-coloring-pages.html" class="category-link">Halloween</a>
+          <a href="/christmas-coloring-pages.html" class="category-link">Christmas</a>
+          <a href="/dinosaurs-coloring-pages.html" class="category-link">Dinosaurs</a>
+          <a href="/sports-coloring-pages.html" class="category-link">Sports</a>
+          <a href="/animals-coloring-pages.html" class="category-link">Animals</a>
+         <!--  <a href="/unicorn-coloring-pages.html" class="category-link">Unicorns</a>
+          <a href="/space-coloring-pages.html" class="category-link">Space</a>
+          <a href="/trucks-coloring-pages.html" class="category-link">Trucks & Vehicles</a>
+          <a href="/alphabet-coloring-pages.html" class="category-link">Alphabet</a>
+          <a href="/numbers-coloring-pages.html" class="category-link">Numbers</a> -->
+        </div>
+      </div>
+    </section>
+
     <!-- Browse -->
     <section id="browse" class="browse-section">
       <div class="container">
-
         <header class="section-header">
           <h2>Browse Free Printable Coloring Pages</h2>
           <p>
@@ -155,7 +174,6 @@
         <div id="emptyState" class="empty-state hidden">
           No coloring pages found for your filters. Try adjusting search or category.
         </div>
-
       </div>
     </section>
 
@@ -236,7 +254,6 @@
         </ul>
       </div>
     </section>
-
   </main>
 
   <!-- Footer -->
