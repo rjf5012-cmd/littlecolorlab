@@ -51,7 +51,6 @@ img {
   padding: 0.75rem 0;
 }
 
-/* Header Logo */
 .site-logo {
   height: 40px;
   width: auto;
@@ -82,11 +81,10 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  max-width: 480px;    /* Centering whole hero stack */
+  max-width: 480px;     /* the reference width for headline + paragraph */
   margin: 0 auto;
 }
 
-/* Hero logo — big, centered */
 .hero-logo {
   height: 250px;
   width: auto;
@@ -94,25 +92,23 @@ img {
   margin-bottom: 1rem;
 }
 
-/* Centered hero text block */
 .hero-text {
   text-align: center;
 }
 
-/* Headline */
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
 
-/* ⭐ Final fix: Perfect paragraph centering */
+/* ⭐ FINAL FIX: paragraph width matches hero container width */
 .hero p,
 .hero-text p {
-  max-width: 28rem;               /* narrower for visual centering */
-  margin: 0.5rem auto 0 auto;     /* auto-centers the whole block */
+  max-width: 480px;               /* PERFECT alignment with headline */
+  margin: 0.5rem auto 0 auto;
   font-size: 1rem;
   line-height: 1.5;
-  text-align: center;             /* centers text inside */
+  text-align: center;
 }
 
 .btn-primary {
