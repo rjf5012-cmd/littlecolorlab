@@ -9,22 +9,22 @@
     "tags": ["dog", "basketball", "puppy"]
   },
   {
-    "id": "halloween-pumpkin-1",
-    "title": "Smiling Pumpkin",
-    "category": "Halloween",
+    "id": "christmas-bear-presents",
+    "title": "Christmas Bear Holding Present",
+    "category": "Christmas",
     "ageRange": "3-5",
-    "pdf": "/assets/coloring/halloween/pumpkin-1.pdf",
-    "image": "/assets/coloring/halloween/pumpkin-1-thumb.jpg",
-    "tags": ["pumpkin", "jack-o-lantern"]
+    "pdf": "/assets/coloring/christmas/christmas-bear-presents.pdf",
+    "image": "/assets/coloring/christmas/christmas-bear-presents.png",
+    "tags": ["bear", "present"]
   },
   {
-    "id": "christmas-tree-1",
-    "title": "Christmas Tree with Presents",
+    "id": "christmas-presents",
+    "title": "Christmas Presents and Holly",
     "category": "Christmas",
-    "ageRange": "5-8",
-    "pdf": "/assets/coloring/christmas/tree-1.pdf",
-    "image": "/assets/coloring/christmas/tree-1-thumb.jpg",
-    "tags": ["tree", "presents", "ornaments"]
+    "ageRange": "3-8",
+    "pdf": "/assets/coloring/christmas/christmas-presents.pdf",
+    "image": "/assets/coloring/christmas/christmas-presents.png",
+    "tags": ["holly", "presents", "ornaments"]
   },
   {
     "id": "christmas-santa-1",
