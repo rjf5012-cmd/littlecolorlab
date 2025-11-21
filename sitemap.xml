@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Home -->
   <url>
@@ -9,18 +8,68 @@
     <changefreq>daily</changefreq>
   </url>
 
-  <!-- Browse section -->
+  <!-- Main sections on home -->
   <url>
     <loc>https://littlecolorlab.com/#browse</loc>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
-
-  <!-- About section -->
   <url>
     <loc>https://littlecolorlab.com/#about</loc>
     <priority>0.50</priority>
     <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Category landing pages -->
+  <url>
+    <loc>https://littlecolorlab.com/halloween-coloring-pages.html</loc>
+    <priority>0.85</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/christmas-coloring-pages.html</loc>
+    <priority>0.85</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/animals-coloring-pages.html</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/dinosaurs-coloring-pages.html</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/unicorn-coloring-pages.html</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/space-coloring-pages.html</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/sports-coloring-pages.html</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/trucks-coloring-pages.html</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/alphabet-coloring-pages.html</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/numbers-coloring-pages.html</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
 </urlset>
