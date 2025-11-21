@@ -8,35 +8,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Little Color Lab offers free printable coloring pages for kids. Browse holiday, seasonal, and themed coloring sheets for preschool, kindergarten, and elementary classrooms."
+    content="Little Color Lab offers free printable coloring pages for kids of all ages. Holiday, seasonal, animal, and educational themes for preschool, kindergarten, and elementary classrooms."
   />
   <meta name="robots" content="index,follow" />
   <meta name="author" content="Little Color Lab" />
   <link rel="canonical" href="https://littlecolorlab.com/" />
 
-  <!-- FAVICONS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+  <!-- FAVICONS (root-level files) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#ffffff" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Little Color Lab | Printable Coloring Pages for Kids" />
-  <meta property="og:description" content="Free printable coloring pages for kids, organized by holiday, theme, and age. Perfect for teachers and parents looking for clean black-and-white worksheets." />
+  <meta property="og:description" content="Free printable coloring pages for kids. Clean black-and-white coloring sheets organized by holiday, theme, and age range." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://littlecolorlab.com/" />
-  <meta property="og:image" content="https://littlecolorlab.com/assets/logo/little-color-lab.png" />
+  <meta property="og:image" content="https://littlecolorlab.com/apple-touch-icon.png" />
   <meta property="og:site_name" content="Little Color Lab" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Little Color Lab | Printable Coloring Pages for Kids" />
   <meta name="twitter:description" content="Free printable coloring sheets for kids—holiday themes, animals, alphabet pages, seasonal designs, and more." />
-  <meta name="twitter:image" content="https://littlecolorlab.com/assets/logo/little-color-lab.png" />
+  <meta name="twitter:image" content="https://littlecolorlab.com/apple-touch-icon.png" />
 
-  <!-- Structured Data (JSON-LD) -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,7 +74,7 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-content">
 
@@ -89,33 +89,32 @@
           <h1>Printable Coloring Pages for Little Creators</h1>
           <p>
             Little Color Lab offers free printable coloring pages for kids of all ages.
-            Our collection includes fun and simple black-and-white coloring sheets for
+            Our collection includes simple, bold-outlined black-and-white coloring sheets for
             preschool, kindergarten, and elementary classrooms. Browse holiday coloring pages,
-            animal coloring pages, alphabet sheets, seasonal themes, and more — all designed
-            with bold outlines for easy coloring and quick printing.
+            animal themes, alphabet pages, seasonal designs, and more — all perfect for quick
+            printing and easy coloring.
           </p>
           <a href="#browse" class="btn-primary">Browse Coloring Pages</a>
         </div>
       </div>
     </section>
 
-    <!-- Browse Section -->
+    <!-- Browse -->
     <section id="browse" class="browse-section">
       <div class="container">
 
         <header class="section-header">
           <h2>Browse Free Printable Coloring Pages</h2>
           <p>
-            Explore kid-friendly coloring sheets organized by holiday, theme, and age range.  
+            Explore hundreds of kid-friendly coloring sheets organized by holiday, theme, and age range.
             Teachers and parents use Little Color Lab to quickly print classroom coloring pages,
-            seasonal activity sheets, and simple line-art designs with clean outlines. Browse popular
-            sets including Halloween coloring pages, Christmas coloring pages, dinosaur pages,
-            unicorn pages, animal themes, trucks, space adventures, sports sheets, and more.
+            seasonal activity sheets, and simple line-art designs with clean outlines.
+            Popular categories include Halloween coloring pages, Christmas coloring pages,
+            dinosaur pages, unicorn themes, trucks, sports, space adventures, and more.
           </p>
         </header>
 
         <div class="filters">
-          <!-- Search -->
           <div class="filter-group">
             <label for="search">Search</label>
             <input
@@ -125,15 +124,13 @@
             />
           </div>
 
-          <!-- Categories -->
           <div class="filter-group">
             <span class="filter-label">Categories</span>
             <div id="category-buttons" class="category-buttons">
-              <!-- Populated via JS -->
+              <!-- Filled by JS -->
             </div>
           </div>
 
-          <!-- Age Range -->
           <div class="filter-group">
             <label for="ageRange">Age Range</label>
             <select id="ageRange">
@@ -147,47 +144,45 @@
           </div>
         </div>
 
-        <div id="grid" class="sheet-grid">
-          <!-- Cards injected by app.js -->
-        </div>
+        <div id="grid" class="sheet-grid"></div>
 
         <div id="emptyState" class="empty-state hidden">
-          No coloring pages found for your filters. Try clearing search or switching categories.
+          No coloring pages found for your filters. Try adjusting search or category.
         </div>
 
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about-section">
       <div class="container">
         <h2>About Little Color Lab</h2>
 
         <img
           src="/assets/logo/little-color-lab.png"
-          alt="Little Color Lab brand mark"
+          alt="Little Color Lab Brand Mark"
           class="footer-logo"
           loading="lazy"
         />
 
         <p>
-          Little Color Lab was created for busy teachers and parents who need reliable,
-          high-quality printable coloring pages without ads, pop-ups, or complicated downloads.
-          Every coloring sheet on our site is designed with bold, easy-to-color outlines ideal for
-          preschool, kindergarten, and elementary students.
+          Little Color Lab was created for busy teachers and parents who need clean,
+          kid-friendly printable coloring pages without ads or pop-ups. Each coloring sheet
+          is designed with bold outlines perfect for young artists in preschool, kindergarten,
+          and early elementary school.
         </p>
 
         <p>
-          Our growing library includes holiday coloring pages (Halloween, Christmas, Easter,
+          Our growing library features holiday coloring pages (Halloween, Christmas, Easter,
           Valentine’s Day), animal themes (dinosaurs, jungle animals, ocean animals),
-          educational pages (alphabet letters, numbers, shapes), and favorites like unicorns,
-          sports, trucks, dragons, fairies, and space adventures.
+          educational pages (alphabet letters, numbers, shapes), and fun favorites like
+          unicorns, sports, space, dragons, trucks, and fairies.
         </p>
 
         <p>
-          New free printable coloring pages are added regularly so you always have fresh worksheets,
-          rainy-day activities, and classroom coloring ideas ready to print. Everything is free,
-          kid-safe, and easy to use on any home or school printer.
+          New printable coloring pages are added frequently, giving you fresh worksheets,
+          rainy-day activities, and classroom-ready coloring ideas year-round.
+          Everything is free, easy to print, and 100% kid-safe.
         </p>
       </div>
     </section>
