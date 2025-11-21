@@ -11,8 +11,11 @@ const searchInput = document.getElementById("search");
 const ageSelect = document.getElementById("ageRange");
 const emptyStateEl = document.getElementById("emptyState");
 
-// Set footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+// Set footer year (safe even if span doesn't exist)
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
 
 // Fetch JSON data on load
 fetch(DATA_URL)
@@ -39,7 +42,7 @@ function initCategories() {
     new Set(allSheets.map((sheet) => sheet.category))
   ).sort();
 
-  // Add "All" button
+  // "All" button
   const allBtn = createCategoryButton("All");
   allBtn.classList.add("active");
   categoryButtonsEl.appendChild(allBtn);
@@ -118,6 +121,7 @@ function renderSheets() {
   });
 }
 
+// Create individual sheet card
 function createSheetCard(sheet) {
   const card = document.createElement("article");
   card.className = "sheet-card";
@@ -128,6 +132,7 @@ function createSheetCard(sheet) {
   const img = document.createElement("img");
   img.src = sheet.image;
   img.alt = sheet.title;
+  img.loading = "lazy"; // 🔥 Lazy loading for thumbnails
   imageWrapper.appendChild(img);
 
   const title = document.createElement("h3");
