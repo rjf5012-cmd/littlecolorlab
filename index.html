@@ -2,24 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Little Color Lab | Free Printable Coloring Pages for Kids</title>
+  <title>Little Color Lab | Printable Coloring Pages for Kids</title>
+
+  <!-- Basic SEO -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Little Color Lab offers free printable coloring pages for kids. Browse by holiday, theme, and age range—perfect for teachers and parents."
+    content="Little Color Lab offers free printable coloring pages for kids. Browse clean black-and-white coloring sheets by holiday, theme, and age range—perfect for teachers and parents."
   />
   <meta name="robots" content="index,follow" />
+  <meta name="author" content="Little Color Lab" />
+  <link rel="canonical" href="https://littlecolorlab.com/" />
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Little Color Lab | Printable Coloring Pages for Kids" />
+  <meta property="og:description" content="Free printable coloring pages for kids. Simple, clean black-and-white sheets sorted by holiday, theme, and age—ideal for teachers and parents." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://littlecolorlab.com/" />
+  <meta property="og:image" content="https://littlecolorlab.com/assets/logo/little-color-lab.png" />
+  <meta property="og:site_name" content="Little Color Lab" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Little Color Lab | Printable Coloring Pages for Kids" />
+  <meta name="twitter:description" content="Free, kid-friendly printable coloring pages by holiday, theme, and age range." />
+  <meta name="twitter:image" content="https://littlecolorlab.com/assets/logo/little-color-lab.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Little Color Lab",
+    "url": "https://littlecolorlab.com/",
+    "description": "Free printable coloring pages for kids, organized by holiday, theme, and age range.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://littlecolorlab.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-content">
       <div class="logo">
-        <!-- Make sure this file exists: /assets/logo/little-color-lab.png -->
         <img
           src="/assets/logo/little-color-lab.png"
-          alt="Little Color Lab Logo"
+          alt="Little Color Lab logo - printable coloring pages for kids"
           class="site-logo"
         />
       </div>
@@ -31,20 +74,23 @@
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-content">
+
         <img
           src="/assets/logo/little-color-lab.png"
-          alt="Little Color Lab Logo"
+          alt="Little Color Lab logo"
           class="hero-logo"
+          loading="lazy"
         />
 
         <div class="hero-text">
           <h1>Printable Coloring Pages for Little Creators</h1>
           <p>
-            Little Color Lab gives teachers and parents simple, black-and-white coloring pages
-            by holiday, theme, and age. Download as PDFs and print in seconds.
+            Little Color Lab gives teachers and parents simple, clean,
+            black-and-white coloring pages organized by holiday, theme, and
+            age. Download as PDFs and print instantly for your classroom or home.
           </p>
           <a href="#browse" class="btn-primary">Browse Coloring Pages</a>
         </div>
@@ -54,7 +100,16 @@
     <!-- Browse Section -->
     <section id="browse" class="browse-section">
       <div class="container">
+
+        <header class="section-header">
+          <h2>Browse Free Printable Coloring Pages</h2>
+          <p>
+            Filter by category, age range, or keyword to find the perfect coloring sheets for your kids.
+          </p>
+        </header>
+
         <div class="filters">
+          <!-- Search -->
           <div class="filter-group">
             <label for="search">Search</label>
             <input
@@ -64,13 +119,15 @@
             />
           </div>
 
+          <!-- Categories -->
           <div class="filter-group">
             <span class="filter-label">Categories</span>
             <div id="category-buttons" class="category-buttons">
-              <!-- Filled by app.js -->
+              <!-- Populated via JS -->
             </div>
           </div>
 
+          <!-- Age Range -->
           <div class="filter-group">
             <label for="ageRange">Age Range</label>
             <select id="ageRange">
@@ -85,26 +142,42 @@
         </div>
 
         <div id="grid" class="sheet-grid">
-          <!-- Cards injected by app.js -->
+          <!-- Cards go here -->
         </div>
 
         <div id="emptyState" class="empty-state hidden">
-          No coloring pages found for your filters. Try clearing the search or picking a different category.
+          No coloring pages found for your filters. Try clearing search or switching categories.
         </div>
+
       </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="about-section">
       <div class="container">
         <h2>About Little Color Lab</h2>
+
+        <img
+          src="/assets/logo/little-color-lab.png"
+          alt="Little Color Lab brand mark"
+          class="footer-logo"
+          loading="lazy"
+        />
+
         <p>
-          Little Color Lab is built for busy teachers and parents who just need clean,
-          kid-friendly coloring pages without pop-ups or clutter.
+          Little Color Lab is built for busy teachers and parents who want
+          clean, kid-friendly coloring pages without ads, pop-ups, or clutter.
         </p>
+
         <p>
-          Browse by holiday, theme, or age range, pick your favorites, and print.
-          New pages are added over time so your little artists always have something fun to color.
+          Our goal is to make it effortless to find seasonal and themed
+          coloring sheets—whether you’re planning a classroom activity,
+          a rainy-day project, or a holiday party for kids.
+        </p>
+
+        <p>
+          New free printable coloring pages are added over time so your little
+          artists always have something fun to color.
         </p>
       </div>
     </section>
@@ -113,11 +186,6 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <img
-        src="/assets/logo/little-color-lab.png"
-        alt="Little Color Lab Logo"
-        class="footer-logo"
-      />
       <p>&copy; <span id="year"></span> Little Color Lab. All rights reserved.</p>
     </div>
   </footer>
