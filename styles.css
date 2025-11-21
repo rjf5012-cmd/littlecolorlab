@@ -82,11 +82,11 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  max-width: 480px;      /* NEW: keep the whole hero stack nicely narrow */
-  margin: 0 auto;        /* NEW: center the stack in the container */
+  max-width: 480px;    /* Centering whole hero stack */
+  margin: 0 auto;
 }
 
-/* Hero logo */
+/* Hero logo — big, centered */
 .hero-logo {
   height: 250px;
   width: auto;
@@ -94,21 +94,25 @@ img {
   margin-bottom: 1rem;
 }
 
-/* NEW: simple centered hero text */
+/* Centered hero text block */
 .hero-text {
   text-align: center;
 }
 
+/* Headline */
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
 
-.hero p {
-  max-width: 36rem;
-  margin: 0.5rem auto 0;
+/* ⭐ Final fix: Perfect paragraph centering */
+.hero p,
+.hero-text p {
+  max-width: 28rem;               /* narrower for visual centering */
+  margin: 0.5rem auto 0 auto;     /* auto-centers the whole block */
   font-size: 1rem;
   line-height: 1.5;
+  text-align: center;             /* centers text inside */
 }
 
 .btn-primary {
@@ -281,7 +285,6 @@ img {
   text-align: center;
 }
 
-/* Footer section logo */
 .footer-logo {
   height: 300px;
   width: auto;
