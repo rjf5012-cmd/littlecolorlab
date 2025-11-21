@@ -110,7 +110,7 @@ img {
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.5;
-  width: 480px; /* Final fix from previous request */
+  width: 480px;
 }
 
 .btn-primary {
@@ -122,6 +122,7 @@ img {
   color: white;
   font-weight: 600;
   font-size: 0.95rem;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -155,16 +156,22 @@ img {
   border: 1px solid #e5e7eb;
   display: block;
   font-weight: 600;
-  transition: background 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  color: #2563eb;
+  text-decoration: none; /* not underlined by default */
+  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .category-link:hover {
-  background: #f3f4f6;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: #eff6ff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  color: #1d4ed8;
+  text-decoration: underline; /* underline only on hover */
+  text-underline-offset: 2px;
 }
 
 /* ------------------------------ */
-/* Browse Section (Filters/Grid)  */
+/* Browse Section                 */
 /* ------------------------------ */
 
 .browse-section {
