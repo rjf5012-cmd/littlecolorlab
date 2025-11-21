@@ -160,5 +160,77 @@
     "pdf": "/assets/coloring/dinosaurs/dinosaur-8.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-8.png",
     "tags": ["dinosaur", "Roar"]
+  },
+  {
+    "id": "sports-baseball",
+    "title": "Kid Playing Baseball",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-baseball.pdf",
+    "image": "/assets/coloring/sports/sports-baseball.png",
+    "tags": ["sports", "baseball"]
+  },
+  {
+    "id": "sports-baseball-2",
+    "title": "Man Playing Baseball",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-baseball-2.pdf",
+    "image": "/assets/coloring/sports/sports-baseball-2.png",
+    "tags": ["sports", "baseball"]
+  },
+  {
+    "id": "sports-basketball",
+    "title": "Basketball Player",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-basketball.pdf",
+    "image": "/assets/coloring/sports/sports-basketball.png",
+    "tags": ["sports", "basketball"]
+  },
+  {
+    "id": "sports-basketball-2",
+    "title": "Kid Playing Basketball",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-basketball-2.pdf",
+    "image": "/assets/coloring/sports/sports-basketball-2.png",
+    "tags": ["sports", "basketball"]
+  },
+  {
+    "id": "sports-basketball-3",
+    "title": "Basketball Player",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-basketball-3.pdf",
+    "image": "/assets/coloring/sports/sports-basketball-3.png",
+    "tags": ["sports", "basketball"]
+  },
+  {
+    "id": "sports-football",
+    "title": "Football Player",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-football.pdf",
+    "image": "/assets/coloring/sports/sports-football.png",
+    "tags": ["sports", "football"]
+  },
+  {
+    "id": "sports-football-2",
+    "title": "Football Runningback",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-football-2.pdf",
+    "image": "/assets/coloring/sports/sports-football-2.png",
+    "tags": ["sports", "football"]
+  },
+  {
+    "id": "sports-soccer",
+    "title": "Boy Playing Soccer",
+    "category": "Sports",
+    "ageRange": "3-6",
+    "pdf": "/assets/coloring/sports/sports-soccer.pdf",
+    "image": "/assets/coloring/sports/sports-soccer.png",
+    "tags": ["sports", "soccer"]
   }
 ]
