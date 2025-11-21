@@ -82,9 +82,11 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  max-width: 480px;      /* NEW: keep the whole hero stack nicely narrow */
+  margin: 0 auto;        /* NEW: center the stack in the container */
 }
 
-/* Hero logo — doubled size */
+/* Hero logo */
 .hero-logo {
   height: 250px;
   width: auto;
@@ -92,31 +94,19 @@ img {
   margin-bottom: 1rem;
 }
 
-/* Strong centering for hero text block */
+/* NEW: simple centered hero text */
 .hero-text {
-  max-width: 42rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* horizontally center children */
-  text-align: center;    /* center text inside */
+  text-align: center;
 }
 
-.hero-text p {
-  max-width: 36rem;
-  margin: 0.5rem auto 0 auto;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* Heading styles */
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
 
-/* Keep for any other hero paragraphs (safety) */
 .hero p {
+  max-width: 36rem;
+  margin: 0.5rem auto 0;
   font-size: 1rem;
   line-height: 1.5;
 }
