@@ -92,13 +92,25 @@ img {
   margin-bottom: 1rem;
 }
 
+/* ⭐ NEW HERO TEXT FIX — properly centers text and block */
+.hero-text {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-text p {
+  max-width: 36rem;
+  margin: 0.5rem auto 0 auto;
+  text-align: center;
+}
+
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
 
 .hero p {
-  max-width: 36rem;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -279,6 +291,52 @@ img {
   width: auto;
   object-fit: contain;
   margin: 0 auto 1rem auto;
+}
+
+/* ------------------------------ */
+/* Recommended Supplies Section   */
+/* ------------------------------ */
+
+.supplies-section {
+  padding: 2rem 0 3rem;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.supplies-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.supplies-section p {
+  max-width: 40rem;
+  margin: 0 auto 1rem auto;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.supplies-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.supplies-list li {
+  font-size: 0.95rem;
+}
+
+.supplies-list a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.supplies-list a:hover {
+  text-decoration: none;
 }
 
 /* ------------------------------ */
