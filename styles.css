@@ -393,4 +393,71 @@ img {
     width: 100%;
     max-width: 340px;
   }
+  /* ------------------------------ */
+/* New Coloring Pages Section     */
+/* ------------------------------ */
+
+.new-section {
+  padding: 2.5rem 0 3rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
 }
+
+.new-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.new-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.new-card:hover {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.new-card img {
+  width: 100%;
+  background: #f9fafb;
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+}
+
+.new-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.new-card-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.new-card-actions {
+  margin-top: 0.4rem;
+}
+
+.new-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  font-size: 0.8rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 0.375rem;
+}
+
+.new-btn:hover {
+  background: #1d4ed8;
+}
+
+
