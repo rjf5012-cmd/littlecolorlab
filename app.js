@@ -180,4 +180,34 @@ searchInput.addEventListener("input", () => {
 
 ageSelect.addEventListener("change", () => {
   renderSheets();
+
+  // ------------------------------
+// New Coloring Pages Section
+// ------------------------------
+fetch("coloring-sheets.json")
+  .then(res => res.json())
+  .then(data => {
+    // Sort newest first (requires sheets to have an "added" date or rely on natural order)
+    const sorted = data.slice().reverse();
+
+    // Grab the first 6 items
+    const latest = sorted.slice(0, 6);
+
+    const newGrid = document.getElementById("newGrid");
+    newGrid.innerHTML = latest.map(sheet => {
+      return `
+        <div class="new-card">
+          <img src="${sheet.thumbnail}" alt="${sheet.title}" loading="lazy" />
+          <div class="new-card-title">${sheet.title}</div>
+          <div class="new-card-meta">${sheet.age}</div>
+          <div class="new-card-actions">
+            <a class="new-btn" href="${sheet.full}" target="_blank">View / Download</a>
+          </div>
+        </div>
+      `;
+    }).join("");
+  })
+  .catch(err => console.error("Error loading new pages:", err));
+
 });
+
