@@ -12,7 +12,7 @@ const searchInput = document.getElementById("search");
 const ageSelect = document.getElementById("ageRange");
 const emptyStateEl = document.getElementById("emptyState");
 
-// Set footer year (safe even if span doesn't exist)
+// Set footer year
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
@@ -28,8 +28,10 @@ fetch(DATA_URL)
   })
   .then((data) => {
     allSheets = data;
+
     initCategories();
     renderSheets();
+    renderNewSheets(); // NEW SECTION LOADS HERE
   })
   .catch((err) => {
     console.error(err);
@@ -37,7 +39,10 @@ fetch(DATA_URL)
       '<p style="color:#b91c1c;">Error loading coloring sheets. Please try again later.</p>';
   });
 
-// Build category buttons from JSON
+
+// ------------------------------
+// Category Buttons
+// ------------------------------
 function initCategories() {
   const categories = Array.from(
     new Set(allSheets.map((sheet) => sheet.category))
@@ -52,7 +57,6 @@ function initCategories() {
     categoryButtonsEl.appendChild(btn);
   });
 
-  // Highlight correct button based on defaultCategory
   updateActiveCategoryButton(activeCategory);
 }
 
@@ -83,7 +87,10 @@ function updateActiveCategoryButton(category) {
   });
 }
 
-// Render sheets based on filters
+
+// ------------------------------
+// Main Grid Rendering
+// ------------------------------
 function renderSheets() {
   const searchTerm = searchInput.value.trim().toLowerCase();
   const ageFilter = ageSelect.value;
@@ -124,7 +131,10 @@ function renderSheets() {
   });
 }
 
-// Create individual sheet card
+
+// ------------------------------
+// Create Card for Main Grid
+// ------------------------------
 function createSheetCard(sheet) {
   const card = document.createElement("article");
   card.className = "sheet-card";
@@ -135,7 +145,7 @@ function createSheetCard(sheet) {
   const img = document.createElement("img");
   img.src = sheet.image;
   img.alt = sheet.title;
-  img.loading = "lazy"; // Lazy loading for thumbnails
+  img.loading = "lazy";
   imageWrapper.appendChild(img);
 
   const title = document.createElement("h3");
@@ -173,41 +183,41 @@ function createSheetCard(sheet) {
   return card;
 }
 
-// Wire up filters
-searchInput.addEventListener("input", () => {
-  renderSheets();
-});
 
-ageSelect.addEventListener("change", () => {
-  renderSheets();
-
-  // ------------------------------
-// New Coloring Pages Section
 // ------------------------------
-fetch("coloring-sheets.json")
-  .then(res => res.json())
-  .then(data => {
-    // Sort newest first (requires sheets to have an "added" date or rely on natural order)
-    const sorted = data.slice().reverse();
+// Event Listeners for Filters
+// ------------------------------
+searchInput.addEventListener("input", renderSheets);
+ageSelect.addEventListener("change", renderSheets);
 
-    // Grab the first 6 items
-    const latest = sorted.slice(0, 6);
 
-    const newGrid = document.getElementById("newGrid");
-    newGrid.innerHTML = latest.map(sheet => {
+// ------------------------------
+// NEW COLORING PAGES SECTION
+// ------------------------------
+function renderNewSheets() {
+  const newGrid = document.getElementById("newGrid");
+  if (!newGrid) return; // If page doesn't have this section, skip
+
+  // Sort by "added" date newest → oldest
+  const sorted = allSheets
+    .slice()
+    .sort((a, b) => new Date(b.added) - new Date(a.added));
+
+  // First 6 results
+  const latest = sorted.slice(0, 6);
+
+  newGrid.innerHTML = latest
+    .map((sheet) => {
       return `
         <div class="new-card">
-          <img src="${sheet.thumbnail}" alt="${sheet.title}" loading="lazy" />
+          <img src="${sheet.image}" alt="${sheet.title}" loading="lazy" />
           <div class="new-card-title">${sheet.title}</div>
-          <div class="new-card-meta">${sheet.age}</div>
+          <div class="new-card-meta">Ages ${sheet.ageRange}</div>
           <div class="new-card-actions">
-            <a class="new-btn" href="${sheet.full}" target="_blank">View / Download</a>
+            <a class="new-btn" href="${sheet.pdf}" target="_blank">View / Download</a>
           </div>
         </div>
       `;
-    }).join("");
-  })
-  .catch(err => console.error("Error loading new pages:", err));
-
-});
-
+    })
+    .join("");
+}
