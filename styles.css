@@ -51,7 +51,6 @@ img {
   padding: 0.75rem 0;
 }
 
-/* Header Logo */
 .site-logo {
   height: 40px;
   width: auto;
@@ -122,7 +121,6 @@ img {
   color: white;
   font-weight: 600;
   font-size: 0.95rem;
-  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -158,15 +156,15 @@ img {
   font-weight: 600;
   cursor: pointer;
   color: #2563eb;
-  text-decoration: none; /* not underlined by default */
+  text-decoration: none;
   transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .category-link:hover {
   background: #eff6ff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   color: #1d4ed8;
-  text-decoration: underline; /* underline only on hover */
+  text-decoration: underline;
   text-underline-offset: 2px;
 }
 
@@ -362,38 +360,6 @@ img {
 }
 
 /* ------------------------------ */
-/* Footer                         */
-/* ------------------------------ */
-
-.site-footer {
-  background: #111827;
-  color: #9ca3af;
-  padding: 1rem 0 1.5rem;
-  text-align: center;
-}
-
-/* ------------------------------ */
-/* Responsive                     */
-/* ------------------------------ */
-
-@media (max-width: 768px) {
-  .filters {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 2.5rem 0 2rem;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    width: 100%;
-    max-width: 340px;
-  }
-  /* ------------------------------ */
 /* New Coloring Pages Section     */
 /* ------------------------------ */
 
@@ -422,7 +388,7 @@ img {
 }
 
 .new-card:hover {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 .new-card img {
@@ -460,4 +426,36 @@ img {
   background: #1d4ed8;
 }
 
+/* ------------------------------ */
+/* Footer                         */
+/* ------------------------------ */
 
+.site-footer {
+  background: #111827;
+  color: #9ca3af;
+  padding: 1rem 0 1.5rem;
+  text-align: center;
+}
+
+/* ------------------------------ */
+/* Responsive                     */
+/* ------------------------------ */
+
+@media (max-width: 768px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    width: 100%;
+    max-width: 340px;
+  }
+}
