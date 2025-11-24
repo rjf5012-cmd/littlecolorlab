@@ -458,5 +458,88 @@
     "pdf": "/assets/coloring/valentines/valentines-theme.pdf",
     "image": "/assets/coloring/valentines/valentines-theme.png",
     "tags": ["valentine", "hearts", "doodles", "love"]
+  },
+[
+  {
+    "id": "stpatricks-happystpatsday",
+    "title": "Happy St. Patrick’s Day",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-happystpatsday.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-happystpatsday.png",
+    "tags": ["st patricks", "holiday", "shamrock", "hearts"]
+  },
+  {
+    "id": "stpatricks-leprechaun",
+    "title": "Leprechaun",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-leprechaun.png",
+    "tags": ["leprechaun", "irish", "holiday"]
+  },
+  {
+    "id": "stpatricks-leprechaun-2",
+    "title": "Leprechaun 2",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2.png",
+    "tags": ["leprechaun", "irish", "clover"]
+  },
+  {
+    "id": "stpatricks-leprechaunface",
+    "title": "Leprechaun Face",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunface.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunface.png",
+    "tags": ["leprechaun", "face", "irish"]
+  },
+  {
+    "id": "stpatricks-leprechaunface-2",
+    "title": "Leprechaun Face 2",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunface-2.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunface-2.png",
+    "tags": ["leprechaun", "face", "holiday"]
+  },
+  {
+    "id": "stpatricks-leprechaunshamrocks",
+    "title": "Leprechaun with Shamrocks",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks.png",
+    "tags": ["leprechaun", "shamrocks", "irish"]
+  },
+  {
+    "id": "stpatricks-potofgold",
+    "title": "Pot of Gold",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgold.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-potofgold.png",
+    "tags": ["pot of gold", "gold", "rainbow", "irish"]
+  },
+  {
+    "id": "stpatricks-potofgoldrainbow",
+    "title": "Pot of Gold with Rainbow",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow.png",
+    "tags": ["rainbow", "gold", "holiday"]
+  },
+  {
+    "id": "stpatricks-shamrockhat",
+    "title": "Shamrock Hat",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.png",
+    "tags": ["shamrock", "hat", "irish"]
+  },
+  {
+    "id": "stpatricks-shamrockhat-2",
+    "title": "Shamrock Hat 2",
+    "category": "StPatricks",
+    "pdf": "/assets/coloring/stpatricks/stpatricksday-shamrockhat-2.pdf",
+    "image": "/assets/coloring/stpatricks/stpatricksday-shamrockhat-2.png",
+    "tags": ["shamrock", "hat", "st patricks day"]
   }
+]
+
 ]
