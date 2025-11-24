@@ -8,70 +8,68 @@
     <changefreq>daily</changefreq>
   </url>
 
-  <!-- Main sections on home -->
+  <!-- Main sections -->
   <url>
     <loc>https://littlecolorlab.com/#browse</loc>
-    <priority>0.80</priority>
-    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://littlecolorlab.com/#categories</loc>
-    <priority>0.70</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://littlecolorlab.com/#about</loc>
-    <priority>0.50</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://littlecolorlab.com/#supplies</loc>
-    <priority>0.40</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <!-- Category landing pages currently in use -->
-  <url>
-    <loc>https://littlecolorlab.com/halloween-coloring-pages.html</loc>
-    <priority>0.85</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://littlecolorlab.com/christmas-coloring-pages.html</loc>
-    <priority>0.85</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://littlecolorlab.com/dinosaurs-coloring-pages.html</loc>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
-  <url>
-    <loc>https://littlecolorlab.com/sports-coloring-pages.html</loc>
-    <priority>0.80</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://littlecolorlab.com/animals-coloring-pages.html</loc>
-    <priority>0.80</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <!-- Legal & info pages -->
   <url>
     <loc>https://littlecolorlab.com/about.html</loc>
-    <priority>0.40</priority>
-    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://littlecolorlab.com/privacy.html</loc>
-    <priority>0.30</priority>
+    <priority>0.40</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://littlecolorlab.com/terms.html</loc>
-    <priority>0.30</priority>
+    <priority>0.40</priority>
     <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Category landing pages -->
+  <url>
+    <loc>https://littlecolorlab.com/halloween-coloring-pages.html</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/christmas-coloring-pages.html</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/valentines-coloring-pages.html</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/stpatricksday-coloring-pages.html</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/dinosaurs-coloring-pages.html</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/sports-coloring-pages.html</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://littlecolorlab.com/animals-coloring-pages.html</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
 </urlset>
