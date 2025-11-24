@@ -475,7 +475,7 @@
     "tags": ["leprechaun", "face", "irish"]
   },
   {
-    "id": "stpatricks-leprechaunshamrocks",
+    "id": "stpatricksday-leprechaunshamrocks",
     "title": "Leprechaun with Shamrocks",
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks.pdf",
@@ -483,7 +483,7 @@
     "tags": ["leprechaun", "shamrocks", "irish"]
   },
   {
-    "id": "stpatricks-potofgold",
+    "id": "stpatricksday-potofgold",
     "title": "Pot of Gold",
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgold.pdf",
@@ -491,7 +491,7 @@
     "tags": ["pot of gold", "gold", "rainbow", "irish"]
   },
   {
-    "id": "stpatricks-potofgoldrainbow",
+    "id": "stpatricksday-potofgoldrainbow",
     "title": "Pot of Gold with Rainbow",
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow.pdf",
@@ -499,20 +499,12 @@
     "tags": ["rainbow", "gold", "holiday"]
   },
   {
-    "id": "stpatricks-shamrockhat",
+    "id": "stpatricksday-shamrockhat",
     "title": "Shamrock Hat",
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.png",
     "tags": ["shamrock", "hat", "irish"]
-  },
-  {
-    "id": "stpatricks-shamrockhat-2",
-    "title": "Shamrock Hat 2",
-    "category": "St. Patrick's Day",
-    "pdf": "/assets/coloring/stpatricks/stpatricksday-shamrockhat-2.pdf",
-    "image": "/assets/coloring/stpatricks/stpatricksday-shamrockhat-2.png",
-    "tags": ["shamrock", "hat", "st patricks day"]
   }
 ]
 
