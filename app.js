@@ -9,7 +9,6 @@ let activeCategory = defaultCategory;
 const gridEl = document.getElementById("grid");
 const categoryButtonsEl = document.getElementById("category-buttons");
 const searchInput = document.getElementById("search");
-const ageSelect = document.getElementById("ageRange");
 const emptyStateEl = document.getElementById("emptyState");
 
 // Set footer year
@@ -31,19 +30,23 @@ fetch(DATA_URL)
 
     initCategories();
     renderSheets();
-    renderNewSheets(); // NEW SECTION LOADS HERE
+    renderNewSheets(); // load "New Coloring Pages" section
   })
   .catch((err) => {
     console.error(err);
-    gridEl.innerHTML =
-      '<p style="color:#b91c1c;">Error loading coloring sheets. Please try again later.</p>';
+    if (gridEl) {
+      gridEl.innerHTML =
+        '<p style="color:#b91c1c;">Error loading coloring sheets. Please try again later.</p>';
+    }
   });
 
+/* ------------------------------ */
+/* Category Buttons               */
+/* ------------------------------ */
 
-// ------------------------------
-// Category Buttons
-// ------------------------------
 function initCategories() {
+  if (!categoryButtonsEl || !allSheets.length) return;
+
   const categories = Array.from(
     new Set(allSheets.map((sheet) => sheet.category))
   ).sort();
@@ -87,22 +90,19 @@ function updateActiveCategoryButton(category) {
   });
 }
 
+/* ------------------------------ */
+/* Main Grid Rendering            */
+/* ------------------------------ */
 
-// ------------------------------
-// Main Grid Rendering
-// ------------------------------
 function renderSheets() {
-  const searchTerm = searchInput.value.trim().toLowerCase();
-  const ageFilter = ageSelect.value;
+  if (!gridEl) return;
+
+  const searchTerm = (searchInput?.value || "").trim().toLowerCase();
 
   let filtered = allSheets.slice();
 
   if (activeCategory !== "All") {
     filtered = filtered.filter((sheet) => sheet.category === activeCategory);
-  }
-
-  if (ageFilter) {
-    filtered = filtered.filter((sheet) => sheet.ageRange === ageFilter);
   }
 
   if (searchTerm) {
@@ -119,10 +119,10 @@ function renderSheets() {
   gridEl.innerHTML = "";
 
   if (filtered.length === 0) {
-    emptyStateEl.classList.remove("hidden");
+    if (emptyStateEl) emptyStateEl.classList.remove("hidden");
     return;
   } else {
-    emptyStateEl.classList.add("hidden");
+    if (emptyStateEl) emptyStateEl.classList.add("hidden");
   }
 
   filtered.forEach((sheet) => {
@@ -131,10 +131,10 @@ function renderSheets() {
   });
 }
 
+/* ------------------------------ */
+/* Card Creation                  */
+/* ------------------------------ */
 
-// ------------------------------
-// Create Card for Main Grid
-// ------------------------------
 function createSheetCard(sheet) {
   const card = document.createElement("article");
   card.className = "sheet-card";
@@ -154,7 +154,7 @@ function createSheetCard(sheet) {
 
   const meta = document.createElement("div");
   meta.className = "sheet-card-meta";
-  meta.textContent = `${sheet.category} • Ages ${sheet.ageRange}`;
+  meta.textContent = `${sheet.category} • Ages ${sheet.ageRange || "3–8"}`;
 
   const actions = document.createElement("div");
   actions.className = "sheet-card-actions";
@@ -183,27 +183,32 @@ function createSheetCard(sheet) {
   return card;
 }
 
+/* ------------------------------ */
+/* Events                         */
+/* ------------------------------ */
 
-// ------------------------------
-// Event Listeners for Filters
-// ------------------------------
-searchInput.addEventListener("input", renderSheets);
-ageSelect.addEventListener("change", renderSheets);
+if (searchInput) {
+  searchInput.addEventListener("input", renderSheets);
+}
 
+/* ------------------------------ */
+/* New Coloring Pages Section     */
+/* ------------------------------ */
 
-// ------------------------------
-// NEW COLORING PAGES SECTION
-// ------------------------------
 function renderNewSheets() {
   const newGrid = document.getElementById("newGrid");
-  if (!newGrid) return; // If page doesn't have this section, skip
+  if (!newGrid || !allSheets.length) return;
 
-  // Sort by "added" date newest → oldest
+  // Sort by "added" date newest → oldest; fallback if missing
   const sorted = allSheets
     .slice()
-    .sort((a, b) => new Date(b.added) - new Date(a.added));
+    .sort((a, b) => {
+      if (!a.added && !b.added) return 0;
+      if (!a.added) return 1;
+      if (!b.added) return -1;
+      return new Date(b.added) - new Date(a.added);
+    });
 
-  // First 6 results
   const latest = sorted.slice(0, 6);
 
   newGrid.innerHTML = latest
@@ -212,7 +217,7 @@ function renderNewSheets() {
         <div class="new-card">
           <img src="${sheet.image}" alt="${sheet.title}" loading="lazy" />
           <div class="new-card-title">${sheet.title}</div>
-          <div class="new-card-meta">Ages ${sheet.ageRange}</div>
+          <div class="new-card-meta">Ages ${sheet.ageRange || "3–8"}</div>
           <div class="new-card-actions">
             <a class="new-btn" href="${sheet.pdf}" target="_blank">View / Download</a>
           </div>
