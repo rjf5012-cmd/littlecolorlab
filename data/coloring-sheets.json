@@ -398,5 +398,65 @@
     "pdf": "/assets/coloring/space/space-theme.pdf",
     "image": "/assets/coloring/space/space-theme.png",
     "tags": ["space", "planets", "stars"]
+  },
+  {
+    "id": "valentines-bemine",
+    "title": "Be Mine Valentine Card",
+    "category": "Valentine's Day",
+    "ageRange": "3-8",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/valentines/valentines-bemine.pdf",
+    "image": "/assets/coloring/valentines/valentines-bemine.png",
+    "tags": ["valentine", "hearts", "card", "love"]
+  },
+  {
+    "id": "valentines-boygirl",
+    "title": "Valentine Boy and Girl",
+    "category": "Valentine's Day",
+    "ageRange": "3-8",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/valentines/valentines-boygirl.pdf",
+    "image": "/assets/coloring/valentines/valentines-boygirl.png",
+    "tags": ["valentine", "kids", "boy", "girl", "hearts"]
+  },
+  {
+    "id": "valentines-cupid",
+    "title": "Cute Cupid with Hearts",
+    "category": "Valentine's Day",
+    "ageRange": "3-8",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/valentines/valentines-cupid.pdf",
+    "image": "/assets/coloring/valentines/valentines-cupid.png",
+    "tags": ["valentine", "cupid", "hearts", "love"]
+  },
+  {
+    "id": "valentines-happy",
+    "title": "Happy Valentine’s Day Banner",
+    "category": "Valentine's Day",
+    "ageRange": "3-8",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/valentines/valentines-happy.pdf",
+    "image": "/assets/coloring/valentines/valentines-happy.png",
+    "tags": ["valentine", "happy valentines", "letters", "hearts"]
+  },
+  {
+    "id": "valentines-heart",
+    "title": "Valentine Hearts and Gifts",
+    "category": "Valentine's Day",
+    "ageRange": "3-8",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/valentines/valentines-heart.pdf",
+    "image": "/assets/coloring/valentines/valentines-heart.png",
+    "tags": ["valentine", "heart", "gift", "love"]
+  },
+  {
+    "id": "valentines-theme",
+    "title": "Valentine Doodle Theme Page",
+    "category": "Valentine's Day",
+    "ageRange": "3-8",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/valentines/valentines-theme.pdf",
+    "image": "/assets/coloring/valentines/valentines-theme.png",
+    "tags": ["valentine", "hearts", "doodles", "love"]
   }
 ]
