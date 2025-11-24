@@ -8,6 +8,106 @@
     "image": "/assets/coloring/animals/animals-puppybasketball.png",
     "tags": ["dog", "basketball", "puppy"]
   },
+[
+  {
+    "id": "animals-cat",
+    "title": "Cute Cat",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-cat.pdf",
+    "image": "/assets/coloring/animals/animals-cat.png",
+    "tags": ["cat", "kitten"]
+  },
+  {
+    "id": "animals-elephant",
+    "title": "Baby Elephant",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-elephant.pdf",
+    "image": "/assets/coloring/animals/animals-elephant.png",
+    "tags": ["elephant", "baby elephant"]
+  },
+  {
+    "id": "animals-elephant-2",
+    "title": "Elephant Standing",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-elephant-2.pdf",
+    "image": "/assets/coloring/animals/animals-elephant-2.png",
+    "tags": ["elephant", "animal"]
+  },
+  {
+    "id": "animals-giraffe",
+    "title": "Cute Giraffe",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-giraffe.pdf",
+    "image": "/assets/coloring/animals/animals-giraffe.png",
+    "tags": ["giraffe", "animal", "tall"]
+  },
+  {
+    "id": "animals-lion",
+    "title": "Cute Lion",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-lion.pdf",
+    "image": "/assets/coloring/animals/animals-lion.png",
+    "tags": ["lion", "jungle", "king"]
+  },
+  {
+    "id": "animals-lion-2",
+    "title": "Smiling Lion",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-lion-2.pdf",
+    "image": "/assets/coloring/animals/animals-lion-2.png",
+    "tags": ["lion", "cute lion"]
+  },
+  {
+    "id": "animals-monkey",
+    "title": "Monkey Swinging",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-monkey.pdf",
+    "image": "/assets/coloring/animals/animals-monkey.png",
+    "tags": ["monkey", "tree", "jungle"]
+  },
+  {
+    "id": "animals-monkey-2",
+    "title": "Sitting Monkey",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-monkey-2.pdf",
+    "image": "/assets/coloring/animals/animals-monkey-2.png",
+    "tags": ["monkey", "cute monkey"]
+  },
+  {
+    "id": "animals-puppybasketball",
+    "title": "Puppy Playing Basketball",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-puppybasketball.pdf",
+    "image": "/assets/coloring/animals/animals-puppybasketball.png",
+    "tags": ["dog", "puppy", "basketball"]
+  },
+  {
+    "id": "animals-tiger",
+    "title": "Cute Tiger",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-tiger.pdf",
+    "image": "/assets/coloring/animals/animals-tiger.png",
+    "tags": ["tiger", "stripes", "jungle"]
+  },
+  {
+    "id": "animals-turtle",
+    "title": "Cute Turtle",
+    "category": "Animals",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/animals/animals-turtle.pdf",
+    "image": "/assets/coloring/animals/animals-turtle.png",
+    "tags": ["turtle", "shell", "cute"]
+  },
   {
     "id": "christmas-bear-presents",
     "title": "Christmas Bear Holding Present",
