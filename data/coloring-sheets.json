@@ -328,5 +328,75 @@
     "pdf": "/assets/coloring/halloween/halloween-scarecrow.pdf",
     "image": "/assets/coloring/halloween/halloween-scarecrow.png",
     "tags": ["halloween", "spooky"]
+  },
+  {
+    "id": "space-alien",
+    "title": "Cute Space Alien",
+    "category": "Space",
+    "ageRange": "3-6",
+    "added": "2025-11-23",
+    "pdf": "/assets/coloring/space/space-alien.pdf",
+    "image": "/assets/coloring/space/space-alien.png",
+    "tags": ["space", "alien", "cute"]
+  },
+  {
+    "id": "space-astronaut",
+    "title": "Astronaut Floating in Space",
+    "category": "Space",
+    "ageRange": "3-6",
+    "added": "2025-11-22",
+    "pdf": "/assets/coloring/space/space-astronaut.pdf",
+    "image": "/assets/coloring/space/space-astronaut.png",
+    "tags": ["space", "astronaut", "stars"]
+  },
+  {
+    "id": "space-astronaut-2",
+    "title": "Astronaut on the Moon",
+    "category": "Space",
+    "ageRange": "3-6",
+    "added": "2025-11-22",
+    "pdf": "/assets/coloring/space/space-astronaut-2.pdf",
+    "image": "/assets/coloring/space/space-astronaut-2.png",
+    "tags": ["space", "astronaut", "moon"]
+  },
+  {
+    "id": "space-objects",
+    "title": "Planets and Space Objects",
+    "category": "Space",
+    "ageRange": "3-6",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/space/space-objects.pdf",
+    "image": "/assets/coloring/space/space-objects.png",
+    "tags": ["space", "planets", "stars"]
+  },
+  {
+    "id": "space-rocket",
+    "title": "Rocket Ship Blastoff",
+    "category": "Space",
+    "ageRange": "3-6",
+    "added": "2025-11-22",
+    "pdf": "/assets/coloring/space/space-rocket.pdf",
+    "image": "/assets/coloring/space/space-rocket.png",
+    "tags": ["space", "rocket", "ship"]
+  },
+  {
+    "id": "space-rocket-2",
+    "title": "Rocket Flying Through Space",
+    "category": "Space",
+    "ageRange": "3-6",
+    "added": "2025-11-22",
+    "pdf": "/assets/coloring/space/space-rocket-2.pdf",
+    "image": "/assets/coloring/space/space-rocket-2.png",
+    "tags": ["space", "rocket", "stars"]
+  },
+  {
+    "id": "space-theme",
+    "title": "Space Scene with Planets and Stars",
+    "category": "Space",
+    "ageRange": "3-6",
+    "added": "2025-11-24",
+    "pdf": "/assets/coloring/space/space-theme.pdf",
+    "image": "/assets/coloring/space/space-theme.png",
+    "tags": ["space", "planets", "stars"]
   }
 ]
