@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine’s Day Coloring Pages | Little Color Lab</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Free printable Valentine’s Day coloring pages for kids. Hearts, cute characters, cupcakes, gifts, and Valentine doodles—perfect for classroom parties and at-home fun."
+  />
+  <link rel="canonical" href="https://littlecolorlab.com/valentines-coloring-pages.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Favicon bundle -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Valentine’s Day Coloring Pages | Little Color Lab" />
+  <meta property="og:description" content="Free printable Valentine’s Day coloring sheets for kids—hearts, cute Valentines, and fun doodles ready to print." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://littlecolorlab.com/valentines-coloring-pages.html" />
+  <meta property="og:image" content="https://littlecolorlab.com/apple-touch-icon.png" />
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509398148166447"
+    crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+
+<body data-default-category="Valentine's Day">
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="/assets/logo/little-color-lab.png" alt="Little Color Lab Logo" class="site-logo" />
+      </div>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/#browse">Browse Pages</a>
+        <a href="/#categories">Categories</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <img
+          src="/assets/logo/little-color-lab.png"
+          alt="Little Color Lab Logo"
+          class="hero-logo"
+          loading="lazy"
+        />
+        <div class="hero-text">
+          <h1>Valentine’s Day Coloring Pages for Kids</h1>
+          <p>
+            Print free Valentine’s Day coloring pages for classroom parties, card exchanges,
+            and at-home fun. Kids can color hearts, cute Valentines, Cupid characters, and
+            doodle-style Valentine themes with bold outlines perfect for younger artists.
+          </p>
+          <a href="#browse" class="btn-primary">View Valentine’s Day Pages</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="browse" class="browse-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Free Printable Valentine’s Day Coloring Sheets</h2>
+          <p>
+            Use the search box or category buttons to find Valentine’s Day coloring pages.
+            This page automatically shows Valentine’s Day pages first, including “Be Mine”
+            cards, hearts and gifts, cute Valentines, and themed doodle sheets.
+          </p>
+        </header>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label for="search">Search</label>
+            <input
+              type="text"
+              id="search"
+              placeholder="Search Valentine pages (e.g. hearts, cupid, be mine)"
+            />
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label">Categories</span>
+            <div id="category-buttons" class="category-buttons">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+        </div>
+
+        <div id="grid" class="sheet-grid"></div>
+        <div id="emptyState" class="empty-state hidden">
+          No coloring pages found for your filters. Try adjusting search or category.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Little Color Lab. All rights reserved.</p>
+      <p>
+        <a href="/about.html">About</a> ·
+        <a href="/privacy.html">Privacy</a> ·
+        <a href="/terms.html">Terms</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js?v=4"></script>
+</body>
+</html>
