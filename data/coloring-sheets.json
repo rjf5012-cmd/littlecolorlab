@@ -3,7 +3,6 @@
     "id": "animals-puppybasketball",
     "title": "Cute Puppy Playing with Basketball",
     "category": "Animals",
-    "ageRange": "4-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/animals/animals-puppybasketball.pdf",
     "image": "/assets/coloring/animals/animals-puppybasketball.png",
@@ -13,7 +12,6 @@
     "id": "christmas-bear-presents",
     "title": "Christmas Bear Holding Present",
     "category": "Christmas",
-    "ageRange": "3-5",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-bear-presents.pdf",
     "image": "/assets/coloring/christmas/christmas-bear-presents.png",
@@ -23,7 +21,6 @@
     "id": "christmas-presents",
     "title": "Christmas Presents and Holly",
     "category": "Christmas",
-    "ageRange": "3-8",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-presents.pdf",
     "image": "/assets/coloring/christmas/christmas-presents.png",
@@ -33,7 +30,6 @@
     "id": "christmas-reindeer",
     "title": "Reindeer With Ornaments",
     "category": "Christmas",
-    "ageRange": "5-9",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-reindeer.pdf",
     "image": "/assets/coloring/christmas/christmas-reindeer.png",
@@ -43,7 +39,6 @@
     "id": "christmas-santa",
     "title": "Santa Claus",
     "category": "Christmas",
-    "ageRange": "4-7",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-santa.pdf",
     "image": "/assets/coloring/christmas/christmas-santa.png",
@@ -53,7 +48,6 @@
     "id": "christmas-snowman",
     "title": "Snowman with Scarf",
     "category": "Christmas",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman.png",
@@ -63,7 +57,6 @@
     "id": "christmas-snowman-present-tree",
     "title": "Snowman with Present",
     "category": "Christmas",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-present-tree.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-present-tree.png",
@@ -73,7 +66,6 @@
     "id": "christmas-snowman-skating",
     "title": "Snowman Ice Skating",
     "category": "Christmas",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-skating.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-skating.png",
@@ -83,7 +75,6 @@
     "id": "christmas-snowman-tree",
     "title": "Snowman Decorating Christmas Tree",
     "category": "Christmas",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-tree.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-tree.png",
@@ -93,7 +84,6 @@
     "id": "christmas-snowman-tree-clouds",
     "title": "Snowman with Christmas Tree",
     "category": "Christmas",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-tree-clouds.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-tree-clouds.png",
@@ -103,7 +93,6 @@
     "id": "dinosaur-1",
     "title": "Cute Dinosaur",
     "category": "Dinosaurs",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-1.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-1.png",
@@ -113,7 +102,6 @@
     "id": "dinosaur-2",
     "title": "Cute Dinosaur",
     "category": "Dinosaurs",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-2.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-2.png",
@@ -123,7 +111,6 @@
     "id": "dinosaur-3",
     "title": "Cute Dinosaur",
     "category": "Dinosaurs",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-3.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-3.png",
@@ -133,7 +120,6 @@
     "id": "dinosaur-4",
     "title": "Cute Dinosaur",
     "category": "Dinosaurs",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-4.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-4.png",
@@ -363,7 +349,6 @@
     "id": "space-objects",
     "title": "Planets and Space Objects",
     "category": "Space",
-    "ageRange": "3-6",
     "added": "2025-11-24",
     "pdf": "/assets/coloring/space/space-objects.pdf",
     "image": "/assets/coloring/space/space-objects.png",
@@ -373,7 +358,6 @@
     "id": "space-rocket",
     "title": "Rocket Ship Blastoff",
     "category": "Space",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/space/space-rocket.pdf",
     "image": "/assets/coloring/space/space-rocket.png",
@@ -383,7 +367,6 @@
     "id": "space-rocket-2",
     "title": "Rocket Flying Through Space",
     "category": "Space",
-    "ageRange": "3-6",
     "added": "2025-11-22",
     "pdf": "/assets/coloring/space/space-rocket-2.pdf",
     "image": "/assets/coloring/space/space-rocket-2.png",
@@ -459,11 +442,10 @@
     "image": "/assets/coloring/valentines/valentines-theme.png",
     "tags": ["valentine", "hearts", "doodles", "love"]
   },
-[
   {
     "id": "stpatricks-happystpatsday",
     "title": "Happy St. Patrick’s Day",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-happystpatsday.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-happystpatsday.png",
     "tags": ["st patricks", "holiday", "shamrock", "hearts"]
@@ -471,7 +453,7 @@
   {
     "id": "stpatricks-leprechaun",
     "title": "Leprechaun",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaun.png",
     "tags": ["leprechaun", "irish", "holiday"]
@@ -479,7 +461,7 @@
   {
     "id": "stpatricks-leprechaun-2",
     "title": "Leprechaun 2",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2.png",
     "tags": ["leprechaun", "irish", "clover"]
@@ -487,7 +469,7 @@
   {
     "id": "stpatricks-leprechaunface",
     "title": "Leprechaun Face",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunface.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunface.png",
     "tags": ["leprechaun", "face", "irish"]
@@ -495,7 +477,7 @@
   {
     "id": "stpatricks-leprechaunface-2",
     "title": "Leprechaun Face 2",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunface-2.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunface-2.png",
     "tags": ["leprechaun", "face", "holiday"]
@@ -503,7 +485,7 @@
   {
     "id": "stpatricks-leprechaunshamrocks",
     "title": "Leprechaun with Shamrocks",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks.png",
     "tags": ["leprechaun", "shamrocks", "irish"]
@@ -511,7 +493,7 @@
   {
     "id": "stpatricks-potofgold",
     "title": "Pot of Gold",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgold.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-potofgold.png",
     "tags": ["pot of gold", "gold", "rainbow", "irish"]
@@ -519,7 +501,7 @@
   {
     "id": "stpatricks-potofgoldrainbow",
     "title": "Pot of Gold with Rainbow",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow.png",
     "tags": ["rainbow", "gold", "holiday"]
@@ -527,7 +509,7 @@
   {
     "id": "stpatricks-shamrockhat",
     "title": "Shamrock Hat",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.png",
     "tags": ["shamrock", "hat", "irish"]
@@ -535,11 +517,11 @@
   {
     "id": "stpatricks-shamrockhat-2",
     "title": "Shamrock Hat 2",
-    "category": "StPatricks",
+    "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-shamrockhat-2.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-shamrockhat-2.png",
     "tags": ["shamrock", "hat", "st patricks day"]
   }
 ]
 
-]
+
