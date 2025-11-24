@@ -2,24 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dinosaur Coloring Pages for Kids | Little Color Lab</title>
-
-  <!-- Google AdSense -->
-  <script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509398148166447"
-    crossorigin="anonymous">
-  </script>
+  <title>Dinosaur Coloring Pages | Little Color Lab</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Free printable dinosaur coloring pages for kids. T-rex, triceratops, stegosaurus, and more dinosaur coloring sheets for preschool and elementary classrooms."
+    content="Free printable dinosaur coloring pages for kids. Cute dinosaurs, T-Rex, and prehistoric scenes with bold outlines for easy coloring."
   />
-  <meta name="robots" content="index,follow" />
-  <meta name="author" content="Little Color Lab" />
   <link rel="canonical" href="https://littlecolorlab.com/dinosaurs-coloring-pages.html" />
+  <meta name="robots" content="index,follow" />
 
-  <!-- Favicons / manifest -->
+  <!-- Favicon bundle -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -28,19 +21,41 @@
   <meta name="theme-color" content="#ffffff" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Dinosaur Coloring Pages for Kids | Little Color Lab" />
-  <meta property="og:description" content="Print free dinosaur coloring sheets: T-rex, triceratops, stegosaurus, and more kid-friendly dinosaurs to color." />
+  <meta property="og:title" content="Dinosaur Coloring Pages | Little Color Lab" />
+  <meta property="og:description" content="Free printable dinosaur coloring sheets for kids—cute dinosaurs, T-Rex, and prehistoric scenes." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://littlecolorlab.com/dinosaurs-coloring-pages.html" />
   <meta property="og:image" content="https://littlecolorlab.com/apple-touch-icon.png" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dinosaur Coloring Pages for Kids | Little Color Lab" />
-  <meta name="twitter:description" content="Free printable dinosaur coloring pages for kids and classrooms." />
-  <meta name="twitter:image" content="https://littlecolorlab.com/apple-touch-icon.png" />
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://littlecolorlab.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dinosaur Coloring Pages",
+        "item": "https://littlecolorlab.com/dinosaurs-coloring-pages.html"
+      }
+    ]
+  }
+  </script>
 
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509398148166447"
+    crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 
 <body data-default-category="Dinosaurs">
@@ -50,8 +65,10 @@
         <img src="/assets/logo/little-color-lab.png" alt="Little Color Lab Logo" class="site-logo" />
       </div>
       <nav class="main-nav">
+        <a href="/">Home</a>
         <a href="/#browse">Browse Pages</a>
-        <a href="/#about">About</a>
+        <a href="/#categories">Categories</a>
+        <a href="/about.html">About</a>
       </nav>
     </div>
   </header>
@@ -67,26 +84,30 @@
           loading="lazy"
         />
         <div class="hero-text">
+          <p class="breadcrumb">
+            <a href="/">Home</a> &gt; Dinosaur Coloring Pages
+          </p>
           <h1>Dinosaur Coloring Pages for Kids</h1>
           <p>
-            Print fun dinosaur coloring pages featuring friendly T-rex, triceratops, stegosaurus, and more.
-            These simple black-and-white dinosaur sheets are designed with bold outlines, perfect for preschool,
-            kindergarten, and elementary-aged kids who love dino adventures.
+            Roar into coloring time with free dinosaur coloring pages featuring cute dinos,
+            T-Rex characters, and simple prehistoric scenes. These bold-outlined sheets are
+            easy for little hands to color and perfect for dinosaur-themed lessons and parties.
+            For more favorites, explore <a href="/animals-coloring-pages.html">animal pages</a>
+            and <a href="/sports-coloring-pages.html">sports coloring pages</a>.
           </p>
-          <a href="#browse" class="btn-primary">Browse Dinosaur Coloring Pages</a>
+          <a href="#browse" class="btn-primary">View Dinosaur Pages</a>
         </div>
       </div>
     </section>
 
-    <!-- Browse Section -->
+    <!-- Browse Dino Pages -->
     <section id="browse" class="browse-section">
       <div class="container">
         <header class="section-header">
-          <h2>Browse Dinosaur Coloring Sheets</h2>
+          <h2>Free Printable Dinosaur Coloring Sheets</h2>
           <p>
-            Explore a growing collection of dinosaur coloring pages for your classroom or home.
-            Search for specific dinosaurs like T-rex, triceratops, or stegosaurus, and filter by age range
-            to find the best match for your little learners.
+            Use the search box or category buttons below to find dinosaur coloring pages
+            featuring friendly dinos, T-Rex, and more prehistoric fun.
           </p>
         </header>
 
@@ -94,35 +115,39 @@
           <div class="filter-group">
             <label for="search">Search</label>
             <input
-              id="search"
               type="text"
-              placeholder="Search dinosaur sheets (T-rex, triceratops, stegosaurus...)"
+              id="search"
+              placeholder="Search dinosaur pages (e.g. T-Rex, dino, roar)"
             />
           </div>
 
           <div class="filter-group">
             <span class="filter-label">Categories</span>
-            <div id="category-buttons" class="category-buttons"></div>
-          </div>
-
-          <div class="filter-group">
-            <label for="ageRange">Age Range</label>
-            <select id="ageRange">
-              <option value="">All ages</option>
-              <option value="3-5">3–5</option>
-              <option value="4-6">4–6</option>
-              <option value="5-8">5–8</option>
-              <option value="5-9">5–9</option>
-              <option value="7-9">7–9</option>
-            </select>
+            <div id="category-buttons" class="category-buttons">
+              <!-- Filled by JS -->
+            </div>
           </div>
         </div>
 
         <div id="grid" class="sheet-grid"></div>
-
         <div id="emptyState" class="empty-state hidden">
-          No dinosaur coloring pages found for your filters. Try adjusting search or age range.
+          No coloring pages found for your filters. Try adjusting search or category.
         </div>
+      </div>
+    </section>
+
+    <!-- Explore More Categories -->
+    <section class="browse-section">
+      <div class="container">
+        <h2>More Kids Coloring Themes</h2>
+        <p>
+          Kids who love dinosaurs usually enjoy other fun themes too. Try our
+          <a href="/animals-coloring-pages.html">animal coloring pages</a>,
+          <a href="/sports-coloring-pages.html">sports coloring pages</a>, and
+          seasonal sets like
+          <a href="/halloween-coloring-pages.html">Halloween</a> or
+          <a href="/christmas-coloring-pages.html">Christmas coloring pages</a>.
+        </p>
       </div>
     </section>
   </main>
@@ -130,9 +155,16 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <p>&copy; <span id="year"></span> Little Color Lab. All rights reserved.</p>
+      <p>
+        <a href="/#categories">All Categories</a> ·
+        <a href="/#new">New Pages</a> ·
+        <a href="/about.html">About</a> ·
+        <a href="/privacy.html">Privacy</a> ·
+        <a href="/terms.html">Terms</a>
+      </p>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
