@@ -451,7 +451,7 @@
     "tags": ["st patricks", "holiday", "shamrock", "hearts"]
   },
   {
-    "id": "stpatricks-leprechaun",
+    "id": "stpatricksday-leprechaun",
     "title": "Leprechaun",
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun.pdf",
@@ -459,7 +459,7 @@
     "tags": ["leprechaun", "irish", "holiday"]
   },
   {
-    "id": "stpatricks-leprechaun-2",
+    "id": "stpatricksday-leprechaun-2",
     "title": "Leprechaun 2",
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2.pdf",
@@ -467,7 +467,7 @@
     "tags": ["leprechaun", "irish", "clover"]
   },
   {
-    "id": "stpatricks-leprechaunface",
+    "id": "stpatricksday-leprechaunface",
     "title": "Leprechaun Face",
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunface.pdf",
