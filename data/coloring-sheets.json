@@ -6,6 +6,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/animals/animals-puppybasketball.pdf",
     "image": "/assets/coloring/animals/animals-puppybasketball.png",
+    "thumb": "/assets/coloring/animals/animals-puppybasketball-thumb.webp",
     "tags": ["dog", "basketball", "puppy"]
   },
   {
@@ -15,6 +16,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-cat.pdf",
     "image": "/assets/coloring/animals/animals-cat.png",
+    "thumb": "/assets/coloring/animals/animals-cat-thumb.webp",
     "tags": ["cat", "kitten"]
   },
   {
@@ -24,6 +26,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-elephant.pdf",
     "image": "/assets/coloring/animals/animals-elephant.png",
+    "thumb": "/assets/coloring/animals/animals-elephant-thumb.webp",
     "tags": ["elephant", "baby elephant"]
   },
   {
@@ -33,6 +36,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-elephant-2.pdf",
     "image": "/assets/coloring/animals/animals-elephant-2.png",
+    "thumb": "/assets/coloring/animals/animals-elephant-2-thumb.webp",
     "tags": ["elephant", "animal"]
   },
   {
@@ -42,6 +46,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-giraffe.pdf",
     "image": "/assets/coloring/animals/animals-giraffe.png",
+    "thumb": "/assets/coloring/animals/animals-giraffe-thumb.webp",
     "tags": ["giraffe", "animal", "tall"]
   },
   {
@@ -51,6 +56,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-lion.pdf",
     "image": "/assets/coloring/animals/animals-lion.png",
+    "thumb": "/assets/coloring/animals/animals-lion-thumb.webp",
     "tags": ["lion", "jungle", "king"]
   },
   {
@@ -60,6 +66,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-lion-2.pdf",
     "image": "/assets/coloring/animals/animals-lion-2.png",
+    "thumb": "/assets/coloring/animals/animals-lion-2-thumb.webp",
     "tags": ["lion", "cute lion"]
   },
   {
@@ -69,6 +76,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-monkey.pdf",
     "image": "/assets/coloring/animals/animals-monkey.png",
+    "thumb": "/assets/coloring/animals/animals-monkey-thumb.webp",
     "tags": ["monkey", "tree", "jungle"]
   },
   {
@@ -78,6 +86,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-monkey-2.pdf",
     "image": "/assets/coloring/animals/animals-monkey-2.png",
+    "thumb": "/assets/coloring/animals/animals-monkey-2-thumb.webp",
     "tags": ["monkey", "cute monkey"]
   },
   {
@@ -87,6 +96,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-puppybasketball.pdf",
     "image": "/assets/coloring/animals/animals-puppybasketball.png",
+    "thumb": "/assets/coloring/animals/animals-puppybasketball-thumb.webp",
     "tags": ["dog", "puppy", "basketball"]
   },
   {
@@ -96,6 +106,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-tiger.pdf",
     "image": "/assets/coloring/animals/animals-tiger.png",
+    "thumb": "/assets/coloring/animals/animals-tiger-thumb.webp",
     "tags": ["tiger", "stripes", "jungle"]
   },
   {
@@ -105,6 +116,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/animals/animals-turtle.pdf",
     "image": "/assets/coloring/animals/animals-turtle.png",
+    "thumb": "/assets/coloring/animals/animals-turtle-thumb.webp",
     "tags": ["turtle", "shell", "cute"]
   },
   {
@@ -114,6 +126,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-bear-presents.pdf",
     "image": "/assets/coloring/christmas/christmas-bear-presents.png",
+    "thumb": "/assets/coloring/christmas/christmas-bear-presents-thumb.webp",
     "tags": ["bear", "present"]
   },
   {
@@ -123,6 +136,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-presents.pdf",
     "image": "/assets/coloring/christmas/christmas-presents.png",
+    "thumb": "/assets/coloring/christmas/christmas-presents-thumb.webp",
     "tags": ["holly", "presents", "ornaments"]
   },
   {
@@ -132,6 +146,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-reindeer.pdf",
     "image": "/assets/coloring/christmas/christmas-reindeer.png",
+    "thumb": "/assets/coloring/christmas/christmas-reindeer-thumb.webp",
     "tags": ["reindeer", "ornaments"]
   },
   {
@@ -141,6 +156,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-santa.pdf",
     "image": "/assets/coloring/christmas/christmas-santa.png",
+    "thumb": "/assets/coloring/christmas/christmas-santa-thumb.webp",
     "tags": ["santa", "christmas"]
   },
   {
@@ -150,6 +166,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman.png",
+    "thumb": "/assets/coloring/christmas/christmas-snowman-thumb.webp",
     "tags": ["snowman", "winter"]
   },
   {
@@ -159,6 +176,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-present-tree.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-present-tree.png",
+    "thumb": "/assets/coloring/christmas/christmas-snowman-present-tree-thumb.webp",
     "tags": ["snowman", "winter"]
   },
   {
@@ -168,6 +186,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-skating.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-skating.png",
+    "thumb": "/assets/coloring/christmas/christmas-snowman-skating-thumb.webp",
     "tags": ["snowman", "winter"]
   },
   {
@@ -177,6 +196,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-tree.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-tree.png",
+    "thumb": "/assets/coloring/christmas/christmas-snowman-tree-thumb.webp",
     "tags": ["snowman", "winter"]
   },
   {
@@ -186,6 +206,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/christmas/christmas-snowman-tree-clouds.pdf",
     "image": "/assets/coloring/christmas/christmas-snowman-tree-clouds.png",
+    "thumb": "/assets/coloring/christmas/christmas-snowman-tree-clouds-thumb.webp",
     "tags": ["snowman", "winter"]
   },
   {
@@ -195,6 +216,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-1.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-1.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-1-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -204,6 +226,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-2.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-2.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-2-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -213,6 +236,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-3.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-3.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-3-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -222,6 +246,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-4.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-4.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-4-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -232,6 +257,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-5.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-5.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-5-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -242,6 +268,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-6.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-6.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-6-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -252,6 +279,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-7.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-7.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-7-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -262,6 +290,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/dinosaurs/dinosaur-8.pdf",
     "image": "/assets/coloring/dinosaurs/dinosaur-8.png",
+    "thumb": "/assets/coloring/dinosaurs/dinosaur-8-thumb.webp",
     "tags": ["dinosaur", "Roar"]
   },
   {
@@ -272,6 +301,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-baseball.pdf",
     "image": "/assets/coloring/sports/sports-baseball.png",
+    "thumb": "/assets/coloring/sports/sports-baseball-thumb.webp",
     "tags": ["sports", "baseball"]
   },
   {
@@ -282,6 +312,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-baseball-2.pdf",
     "image": "/assets/coloring/sports/sports-baseball-2.png",
+    "thumb": "/assets/coloring/sports/sports-baseball-2-thumb.webp",
     "tags": ["sports", "baseball"]
   },
   {
@@ -292,6 +323,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-basketball.pdf",
     "image": "/assets/coloring/sports/sports-basketball.png",
+    "thumb": "/assets/coloring/sports/sports-basketball-thumb.webp",
     "tags": ["sports", "basketball"]
   },
   {
@@ -302,6 +334,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-basketball-2.pdf",
     "image": "/assets/coloring/sports/sports-basketball-2.png",
+    "thumb": "/assets/coloring/sports/sports-basketball-2-thumb.webp",
     "tags": ["sports", "basketball"]
   },
   {
@@ -312,6 +345,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-basketball-3.pdf",
     "image": "/assets/coloring/sports/sports-basketball-3.png",
+    "thumb": "/assets/coloring/sports/sports-basketball-3-thumb.webp",
     "tags": ["sports", "basketball"]
   },
   {
@@ -322,6 +356,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-football.pdf",
     "image": "/assets/coloring/sports/sports-football.png",
+    "thumb": "/assets/coloring/sports/sports-football-thumb.webp",
     "tags": ["sports", "football"]
   },
   {
@@ -332,6 +367,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-football-2.pdf",
     "image": "/assets/coloring/sports/sports-football-2.png",
+    "thumb": "/assets/coloring/sports/sports-football-2-thumb.webp",
     "tags": ["sports", "football"]
   },
   {
@@ -342,6 +378,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/sports/sports-soccer.pdf",
     "image": "/assets/coloring/sports/sports-soccer.png",
+    "thumb": "/assets/coloring/sports/sports-soccer-thumb.webp",
     "tags": ["sports", "soccer"]
   },
   {
@@ -352,6 +389,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/halloween/halloween-dracula.pdf",
     "image": "/assets/coloring/halloween/halloween-dracula.png",
+    "thumb": "/assets/coloring/halloween/halloween-dracula-thumb.webp",
     "tags": ["halloween", "spooky"]
   },
   {
@@ -362,6 +400,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/halloween/halloween-ghost.pdf",
     "image": "/assets/coloring/halloween/halloween-ghost.png",
+    "thumb": "/assets/coloring/halloween/halloween-ghost-thumb.webp",
     "tags": ["halloween", "spooky"]
   },
   {
@@ -372,6 +411,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/halloween/halloween-ghostpumpkin.pdf",
     "image": "/assets/coloring/halloween/halloween-ghostpumpkin.png",
+    "thumb": "/assets/coloring/halloween/halloween-ghostpumpkin-thumb.webp",
     "tags": ["halloween", "spooky"]
   },
   {
@@ -382,6 +422,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/halloween/halloween-hauntedhouse.pdf",
     "image": "/assets/coloring/halloween/halloween-hauntedhouse.png",
+    "thumb": "/assets/coloring/halloween/halloween-hauntedhouse-thumb.webp",
     "tags": ["halloween", "spooky"]
   },
   {
@@ -392,6 +433,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/halloween/halloween-hauntedhouse-2.pdf",
     "image": "/assets/coloring/halloween/halloween-hauntedhouse-2.png",
+    "thumb": "/assets/coloring/halloween/halloween-hauntedhouse-2-thumb.webp",
     "tags": ["halloween", "spooky"]
   },
   {
@@ -402,6 +444,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/halloween/halloween-jackolantern.pdf",
     "image": "/assets/coloring/halloween/halloween-jackolantern.png",
+    "thumb": "/assets/coloring/halloween/halloween-jackolantern-thumb.webp",
     "tags": ["halloween", "spooky"]
   },
   {
@@ -412,6 +455,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/halloween/halloween-scarecrow.pdf",
     "image": "/assets/coloring/halloween/halloween-scarecrow.png",
+    "thumb": "/assets/coloring/halloween/halloween-scarecrow-thumb.webp",
     "tags": ["halloween", "spooky"]
   },
   {
@@ -422,6 +466,7 @@
     "added": "2025-11-23",
     "pdf": "/assets/coloring/space/space-alien.pdf",
     "image": "/assets/coloring/space/space-alien.png",
+    "thumb": "/assets/coloring/space/space-alien-thumb.webp",
     "tags": ["space", "alien", "cute"]
   },
   {
@@ -432,6 +477,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/space/space-astronaut.pdf",
     "image": "/assets/coloring/space/space-astronaut.png",
+    "thumb": "/assets/coloring/space/space-astronaut-thumb.webp",
     "tags": ["space", "astronaut", "stars"]
   },
   {
@@ -442,6 +488,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/space/space-astronaut-2.pdf",
     "image": "/assets/coloring/space/space-astronaut-2.png",
+    "thumb": "/assets/coloring/space/space-astronaut-2-thumb.webp",
     "tags": ["space", "astronaut", "moon"]
   },
   {
@@ -451,6 +498,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/space/space-objects.pdf",
     "image": "/assets/coloring/space/space-objects.png",
+    "thumb": "/assets/coloring/space/space-objects-thumb.webp",
     "tags": ["space", "planets", "stars"]
   },
   {
@@ -460,6 +508,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/space/space-rocket.pdf",
     "image": "/assets/coloring/space/space-rocket.png",
+    "thumb": "/assets/coloring/space/space-rocket-thumb.webp",
     "tags": ["space", "rocket", "ship"]
   },
   {
@@ -469,6 +518,7 @@
     "added": "2025-11-22",
     "pdf": "/assets/coloring/space/space-rocket-2.pdf",
     "image": "/assets/coloring/space/space-rocket-2.png",
+    "thumb": "/assets/coloring/space/space-rocket-2-thumb.webp",
     "tags": ["space", "rocket", "stars"]
   },
   {
@@ -479,6 +529,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/space/space-theme.pdf",
     "image": "/assets/coloring/space/space-theme.png",
+    "thumb": "/assets/coloring/space/space-theme-thumb.webp",
     "tags": ["space", "planets", "stars"]
   },
   {
@@ -489,6 +540,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/valentines/valentines-bemine.pdf",
     "image": "/assets/coloring/valentines/valentines-bemine.png",
+    "thumb": "/assets/coloring/valentines/valentines-bemine-thumb.webp",
     "tags": ["valentine", "hearts", "card", "love"]
   },
   {
@@ -499,6 +551,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/valentines/valentines-boygirl.pdf",
     "image": "/assets/coloring/valentines/valentines-boygirl.png",
+    "thumb": "/assets/coloring/valentines/valentines-boygirl-thumb.webp",
     "tags": ["valentine", "kids", "boy", "girl", "hearts"]
   },
   {
@@ -509,6 +562,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/valentines/valentines-cupid.pdf",
     "image": "/assets/coloring/valentines/valentines-cupid.png",
+    "thumb": "/assets/coloring/valentines/valentines-cupid-thumb.webp",
     "tags": ["valentine", "cupid", "hearts", "love"]
   },
   {
@@ -519,6 +573,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/valentines/valentines-happy.pdf",
     "image": "/assets/coloring/valentines/valentines-happy.png",
+    "thumb": "/assets/coloring/valentines/valentines-happy-thumb.webp",
     "tags": ["valentine", "happy valentines", "letters", "hearts"]
   },
   {
@@ -529,6 +584,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/valentines/valentines-heart.pdf",
     "image": "/assets/coloring/valentines/valentines-heart.png",
+    "thumb": "/assets/coloring/valentines/valentines-heart-thumb.webp",
     "tags": ["valentine", "heart", "gift", "love"]
   },
   {
@@ -539,6 +595,7 @@
     "added": "2025-11-24",
     "pdf": "/assets/coloring/valentines/valentines-theme.pdf",
     "image": "/assets/coloring/valentines/valentines-theme.png",
+    "thumb": "/assets/coloring/valentines/valentines-theme-thumb.webp",
     "tags": ["valentine", "hearts", "doodles", "love"]
   },
   {
@@ -547,6 +604,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-happystpatsday.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-happystpatsday.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-happystpatsday-thumb.webp",
     "tags": ["st patricks", "holiday", "shamrock", "hearts"]
   },
   {
@@ -555,6 +613,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaun.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-leprechaun-thumb.webp",
     "tags": ["leprechaun", "irish", "holiday"]
   },
   {
@@ -563,6 +622,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-leprechaun-2-thumb.webp",
     "tags": ["leprechaun", "irish", "clover"]
   },
   {
@@ -571,6 +631,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunface.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunface.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-leprechaunface-thumb.webp",
     "tags": ["leprechaun", "face", "irish"]
   },
   {
@@ -579,6 +640,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-leprechaunshamrocks-thumb.webp",
     "tags": ["leprechaun", "shamrocks", "irish"]
   },
   {
@@ -587,6 +649,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgold.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-potofgold.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-potofgold-thumb.webp",
     "tags": ["pot of gold", "gold", "rainbow", "irish"]
   },
   {
@@ -595,6 +658,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-potofgoldrainbow-thumb.webp",
     "tags": ["rainbow", "gold", "holiday"]
   },
   {
@@ -603,8 +667,7 @@
     "category": "St. Patrick's Day",
     "pdf": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.pdf",
     "image": "/assets/coloring/stpatricks/stpatricksday-shamrockhat.png",
+    "thumb": "/assets/coloring/stpatricks/stpatricksday-shamrockhat-thumb.webp",
     "tags": ["shamrock", "hat", "irish"]
   }
 ]
-
-
