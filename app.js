@@ -2,24 +2,28 @@
 
 const DATA_URL = "/data/coloring-sheets.json";
 
+// If body has data-default-category (e.g., "Christmas"), use that for landing pages
 const defaultCategory = document.body.dataset.defaultCategory || "All";
+
 let allSheets = [];
 let activeCategory = defaultCategory;
 
-// DOM elements
+// Core DOM elements (some may be missing on certain pages, so we guard)
 const gridEl = document.getElementById("grid");
 const categoryButtonsEl = document.getElementById("category-buttons");
 const searchInput = document.getElementById("search");
 const emptyStateEl = document.getElementById("emptyState");
 const newGridEl = document.getElementById("newGrid");
 
-// Set footer year (safe even if span doesn't exist)
+// Set footer year safely
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
+// -----------------------------------------
 // Fetch JSON data on load
+// -----------------------------------------
 fetch(DATA_URL)
   .then((res) => {
     if (!res.ok) {
@@ -28,10 +32,22 @@ fetch(DATA_URL)
     return res.json();
   })
   .then((data) => {
-    allSheets = data;
-    initCategories();
-    renderSheets();
-    renderNewSection();
+    allSheets = data || [];
+
+    // Build category buttons if container exists
+    if (categoryButtonsEl) {
+      initCategories();
+    }
+
+    // Render main grid if present
+    if (gridEl) {
+      renderSheets();
+    }
+
+    // Render "New Coloring Pages" section if present
+    if (newGridEl) {
+      renderNewSection();
+    }
   })
   .catch((err) => {
     console.error(err);
@@ -41,15 +57,13 @@ fetch(DATA_URL)
     }
   });
 
-// Build category buttons from JSON
+// -----------------------------------------
+// Category buttons
+// -----------------------------------------
 function initCategories() {
-  if (!categoryButtonsEl || !allSheets.length) return;
+  const categories = Array.from(new Set(allSheets.map((sheet) => sheet.category))).sort();
 
-  const categories = Array.from(
-    new Set(allSheets.map((sheet) => sheet.category))
-  ).sort();
-
-  // "All" button
+  // Always start with "All"
   const allBtn = createCategoryButton("All");
   categoryButtonsEl.appendChild(allBtn);
 
@@ -59,6 +73,9 @@ function initCategories() {
   });
 
   // Highlight correct button based on defaultCategory
+  // If defaultCategory doesn't exist, fall back to "All"
+  const hasDefault = categories.includes(defaultCategory) || defaultCategory === "All";
+  activeCategory = hasDefault ? defaultCategory : "All";
   updateActiveCategoryButton(activeCategory);
 }
 
@@ -72,14 +89,15 @@ function createCategoryButton(category) {
   btn.addEventListener("click", () => {
     activeCategory = category;
     updateActiveCategoryButton(category);
-    renderSheets();
+    if (gridEl) {
+      renderSheets();
+    }
   });
 
   return btn;
 }
 
 function updateActiveCategoryButton(category) {
-  if (!categoryButtonsEl) return;
   const buttons = categoryButtonsEl.querySelectorAll(".category-btn");
   buttons.forEach((btn) => {
     if (btn.dataset.category === category) {
@@ -90,15 +108,17 @@ function updateActiveCategoryButton(category) {
   });
 }
 
-// Render main grid based on filters
+// -----------------------------------------
+// Render main grid (Browse section)
+// -----------------------------------------
 function renderSheets() {
-  if (!gridEl || !allSheets.length) return;
+  if (!gridEl) return;
 
   const searchTerm = (searchInput?.value || "").trim().toLowerCase();
 
   let filtered = allSheets.slice();
 
-  if (activeCategory !== "All") {
+  if (activeCategory && activeCategory !== "All") {
     filtered = filtered.filter((sheet) => sheet.category === activeCategory);
   }
 
@@ -115,11 +135,13 @@ function renderSheets() {
 
   gridEl.innerHTML = "";
 
-  if (filtered.length === 0) {
-    if (emptyStateEl) emptyStateEl.classList.remove("hidden");
+  if (!filtered.length) {
+    if (emptyStateEl) {
+      emptyStateEl.classList.remove("hidden");
+    }
     return;
-  } else {
-    if (emptyStateEl) emptyStateEl.classList.add("hidden");
+  } else if (emptyStateEl) {
+    emptyStateEl.classList.add("hidden");
   }
 
   filtered.forEach((sheet) => {
@@ -128,7 +150,6 @@ function renderSheets() {
   });
 }
 
-// Create individual sheet card (no ages shown)
 function createSheetCard(sheet) {
   const card = document.createElement("article");
   card.className = "sheet-card";
@@ -137,19 +158,15 @@ function createSheetCard(sheet) {
   imageWrapper.className = "sheet-card-image";
 
   const img = document.createElement("img");
-  img.src = sheet.image;
+  // Use thumbnail if available, otherwise full image
+  img.src = sheet.thumb || sheet.image;
   img.alt = sheet.title;
-  img.loading = "lazy"; // lazy-loading thumbnails
+  img.loading = "lazy";
   imageWrapper.appendChild(img);
 
   const title = document.createElement("h3");
   title.className = "sheet-card-title";
   title.textContent = sheet.title;
-
-  const meta = document.createElement("div");
-  meta.className = "sheet-card-meta";
-  // Only show category, not ages
-  meta.textContent = sheet.category;
 
   const actions = document.createElement("div");
   actions.className = "sheet-card-actions";
@@ -172,45 +189,60 @@ function createSheetCard(sheet) {
 
   card.appendChild(imageWrapper);
   card.appendChild(title);
-  card.appendChild(meta);
   card.appendChild(actions);
 
   return card;
 }
 
+// -----------------------------------------
 // "New Coloring Pages" section
+// -----------------------------------------
 function renderNewSection() {
-  if (!newGridEl || !allSheets.length) return;
+  if (!newGridEl) return;
 
-  // Sort newest first (using "added" string, newer date should sort ahead)
-  const sorted = allSheets.slice().sort((a, b) => {
-    if (a.added && b.added) {
-      return b.added.localeCompare(a.added);
-    }
-    if (a.added) return -1;
-    if (b.added) return 1;
-    return 0;
-  });
+  // Sort newest first using "added" if present
+  const sorted = allSheets
+    .slice()
+    .sort((a, b) => {
+      const aDate = a.added || "";
+      const bDate = b.added || "";
+      // Descending (newest first)
+      return bDate.localeCompare(aDate);
+    });
 
-  const latest = sorted.slice(0, 6); // show most recent 6
+  // Take the latest 8 items
+  const latest = sorted.slice(0, 8);
+
+  if (!latest.length) {
+    newGridEl.innerHTML = "<p>No new pages available yet. Check back soon!</p>";
+    return;
+  }
 
   newGridEl.innerHTML = latest
     .map((sheet) => {
+      const imgSrc = sheet.thumb || sheet.image;
       return `
-        <div class="new-card">
-          <img src="${sheet.image}" alt="${sheet.title}" loading="lazy" />
+        <article class="new-card">
+          <img 
+            src="${imgSrc}" 
+            alt="${sheet.title}" 
+            loading="lazy" 
+          />
           <div class="new-card-title">${sheet.title}</div>
-          <div class="new-card-meta">${sheet.category}</div>
           <div class="new-card-actions">
-            <a class="new-btn" href="${sheet.pdf}" target="_blank" rel="noopener">View / Download PDF</a>
+            <a class="new-btn" href="${sheet.pdf}" target="_blank" rel="noopener">
+              View / Download PDF
+            </a>
           </div>
-        </div>
+        </article>
       `;
     })
     .join("");
 }
 
-// Wire up search
+// -----------------------------------------
+// Wire up filters
+// -----------------------------------------
 if (searchInput) {
   searchInput.addEventListener("input", () => {
     renderSheets();
