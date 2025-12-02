@@ -1,218 +1,257 @@
 // app.js
+// Little Color Lab – coloring sheets grid + filters + "New pages" section
 
-const DATA_URL = "/data/coloring-sheets.json";
+document.addEventListener("DOMContentLoaded", () => {
+  const gridEl = document.getElementById("grid");
+  const emptyStateEl = document.getElementById("emptyState");
+  const searchInput = document.getElementById("search");
+  const categoryButtonsEl = document.getElementById("category-buttons");
+  const newGridEl = document.getElementById("newGrid");
 
-const defaultCategory = document.body.dataset.defaultCategory || "All";
-let allSheets = [];
-let activeCategory = defaultCategory;
-
-// DOM elements
-const gridEl = document.getElementById("grid");
-const categoryButtonsEl = document.getElementById("category-buttons");
-const searchInput = document.getElementById("search");
-const emptyStateEl = document.getElementById("emptyState");
-const newGridEl = document.getElementById("newGrid");
-
-// Set footer year (safe even if span doesn't exist)
-const yearSpan = document.getElementById("year");
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
-
-// Fetch JSON data on load
-fetch(DATA_URL)
-  .then((res) => {
-    if (!res.ok) {
-      throw new Error("Failed to load coloring sheets.");
-    }
-    return res.json();
-  })
-  .then((data) => {
-    allSheets = data;
-    initCategories();
-    renderSheets();
-    renderNewSection();
-  })
-  .catch((err) => {
-    console.error(err);
-    if (gridEl) {
-      gridEl.innerHTML =
-        '<p style="color:#b91c1c;">Error loading coloring sheets. Please try again later.</p>';
-    }
-  });
-
-// Build category buttons from JSON
-function initCategories() {
-  if (!categoryButtonsEl || !allSheets.length) return;
-
-  const categories = Array.from(
-    new Set(allSheets.map((sheet) => sheet.category))
-  ).sort();
-
-  // "All" button
-  const allBtn = createCategoryButton("All");
-  categoryButtonsEl.appendChild(allBtn);
-
-  categories.forEach((cat) => {
-    const btn = createCategoryButton(cat);
-    categoryButtonsEl.appendChild(btn);
-  });
-
-  // Highlight correct button based on defaultCategory
-  updateActiveCategoryButton(activeCategory);
-}
-
-function createCategoryButton(category) {
-  const btn = document.createElement("button");
-  btn.type = "button";
-  btn.className = "category-btn";
-  btn.textContent = category;
-  btn.dataset.category = category;
-
-  btn.addEventListener("click", () => {
-    activeCategory = category;
-    updateActiveCategoryButton(category);
-    renderSheets();
-  });
-
-  return btn;
-}
-
-function updateActiveCategoryButton(category) {
-  if (!categoryButtonsEl) return;
-  const buttons = categoryButtonsEl.querySelectorAll(".category-btn");
-  buttons.forEach((btn) => {
-    if (btn.dataset.category === category) {
-      btn.classList.add("active");
-    } else {
-      btn.classList.remove("active");
-    }
-  });
-}
-
-// Render main grid based on filters
-function renderSheets() {
-  if (!gridEl || !allSheets.length) return;
-
-  const searchTerm = (searchInput?.value || "").trim().toLowerCase();
-
-  let filtered = allSheets.slice();
-
-  if (activeCategory !== "All") {
-    filtered = filtered.filter((sheet) => sheet.category === activeCategory);
+  const YEAR_SPAN = document.getElementById("year");
+  if (YEAR_SPAN) {
+    YEAR_SPAN.textContent = new Date().getFullYear();
   }
 
-  if (searchTerm) {
-    filtered = filtered.filter((sheet) => {
-      const titleMatch = sheet.title.toLowerCase().includes(searchTerm);
-      const tagsMatch = (sheet.tags || [])
-        .join(" ")
-        .toLowerCase()
-        .includes(searchTerm);
-      return titleMatch || tagsMatch;
+  let allSheets = [];
+  let filteredSheets = [];
+  let activeCategory = "";
+  let searchTerm = "";
+
+  // -------------------------------
+  // Fetch data
+  // -------------------------------
+  fetch("/data/coloring-sheets.json")
+    .then((res) => res.json())
+    .then((data) => {
+      allSheets = data || [];
+
+      // Sort newest first by "added" date if present
+      allSheets.sort((a, b) => {
+        const da = a.added ? Date.parse(a.added) : 0;
+        const db = b.added ? Date.parse(b.added) : 0;
+        return db - da;
+      });
+
+      buildCategoryButtons(allSheets);
+      renderNewSection(allSheets);
+      applyFilters();
+    })
+    .catch((err) => {
+      console.error("Error loading coloring-sheets.json", err);
+      gridEl.innerHTML = "<p>Sorry, we couldn't load the coloring pages right now.</p>";
+    });
+
+  // -------------------------------
+  // Category buttons
+  // -------------------------------
+  function buildCategoryButtons(sheets) {
+    const categories = Array.from(
+      new Set(sheets.map((s) => s.category).filter(Boolean))
+    ).sort();
+
+    // "All" button
+    const allBtn = document.createElement("button");
+    allBtn.type = "button";
+    allBtn.className = "category-btn active";
+    allBtn.textContent = "All";
+    allBtn.dataset.category = "";
+    categoryButtonsEl.appendChild(allBtn);
+
+    allBtn.addEventListener("click", () => {
+      activeCategory = "";
+      updateCategoryActiveState("");
+      applyFilters();
+    });
+
+    categories.forEach((cat) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "category-btn";
+      btn.textContent = cat;
+      btn.dataset.category = cat;
+
+      btn.addEventListener("click", () => {
+        activeCategory = cat;
+        updateCategoryActiveState(cat);
+        applyFilters();
+      });
+
+      categoryButtonsEl.appendChild(btn);
     });
   }
 
-  gridEl.innerHTML = "";
-
-  if (filtered.length === 0) {
-    if (emptyStateEl) emptyStateEl.classList.remove("hidden");
-    return;
-  } else {
-    if (emptyStateEl) emptyStateEl.classList.add("hidden");
+  function updateCategoryActiveState(category) {
+    const buttons = categoryButtonsEl.querySelectorAll(".category-btn");
+    buttons.forEach((btn) => {
+      if (btn.dataset.category === category) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
   }
 
-  filtered.forEach((sheet) => {
-    const card = createSheetCard(sheet);
-    gridEl.appendChild(card);
-  });
-}
+  // -------------------------------
+  // Search
+  // -------------------------------
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      searchTerm = e.target.value.trim().toLowerCase();
+      applyFilters();
+    });
+  }
 
-// Create individual sheet card (no ages shown)
-function createSheetCard(sheet) {
-  const card = document.createElement("article");
-  card.className = "sheet-card";
+  function applyFilters() {
+    filteredSheets = allSheets.filter((sheet) => {
+      const matchesCategory = !activeCategory || sheet.category === activeCategory;
 
-  const imageWrapper = document.createElement("div");
-  imageWrapper.className = "sheet-card-image";
+      if (!matchesCategory) return false;
 
-  const img = document.createElement("img");
-  img.src = sheet.image;
-  img.alt = sheet.title;
-  img.loading = "lazy"; // lazy-loading thumbnails
-  imageWrapper.appendChild(img);
+      if (!searchTerm) return true;
 
-  const title = document.createElement("h3");
-  title.className = "sheet-card-title";
-  title.textContent = sheet.title;
+      const haystack =
+        (sheet.title || "").toLowerCase() +
+        " " +
+        (sheet.category || "").toLowerCase() +
+        " " +
+        (Array.isArray(sheet.tags) ? sheet.tags.join(" ").toLowerCase() : "");
 
-  const meta = document.createElement("div");
-  meta.className = "sheet-card-meta";
-  // Only show category, not ages
-  meta.textContent = sheet.category;
+      return haystack.includes(searchTerm);
+    });
 
-  const actions = document.createElement("div");
-  actions.className = "sheet-card-actions";
+    renderGrid(filteredSheets);
+  }
 
-  const downloadBtn = document.createElement("a");
-  downloadBtn.href = sheet.pdf;
-  downloadBtn.className = "btn-secondary";
-  downloadBtn.textContent = "Download PDF";
-  downloadBtn.setAttribute("download", "");
+  // -------------------------------
+  // Rendering helpers
+  // -------------------------------
+  function renderGrid(sheets) {
+    gridEl.innerHTML = "";
 
-  const openBtn = document.createElement("a");
-  openBtn.href = sheet.pdf;
-  openBtn.className = "btn-outline";
-  openBtn.textContent = "Open in Browser";
-  openBtn.target = "_blank";
-  openBtn.rel = "noopener";
-
-  actions.appendChild(downloadBtn);
-  actions.appendChild(openBtn);
-
-  card.appendChild(imageWrapper);
-  card.appendChild(title);
-  card.appendChild(meta);
-  card.appendChild(actions);
-
-  return card;
-}
-
-// "New Coloring Pages" section
-function renderNewSection() {
-  if (!newGridEl || !allSheets.length) return;
-
-  // Sort newest first (using "added" string, newer date should sort ahead)
-  const sorted = allSheets.slice().sort((a, b) => {
-    if (a.added && b.added) {
-      return b.added.localeCompare(a.added);
+    if (!sheets.length) {
+      emptyStateEl.classList.remove("hidden");
+      return;
     }
-    if (a.added) return -1;
-    if (b.added) return 1;
-    return 0;
-  });
 
-  const latest = sorted.slice(0, 6); // show most recent 6
+    emptyStateEl.classList.add("hidden");
 
-  newGridEl.innerHTML = latest
-    .map((sheet) => {
-      return `
-        <div class="new-card">
-          <img src="${sheet.image}" alt="${sheet.title}" loading="lazy" />
-          <div class="new-card-title">${sheet.title}</div>
-          <div class="new-card-meta">${sheet.category}</div>
-          <div class="new-card-actions">
-            <a class="new-btn" href="${sheet.pdf}" target="_blank" rel="noopener">View / Download PDF</a>
-          </div>
-        </div>
-      `;
-    })
-    .join("");
-}
+    sheets.forEach((sheet) => {
+      const card = createSheetCard(sheet);
+      gridEl.appendChild(card);
+    });
+  }
 
-// Wire up search
-if (searchInput) {
-  searchInput.addEventListener("input", () => {
-    renderSheets();
-  });
-}
+  function renderNewSection(sheets) {
+    if (!newGridEl) return;
+    newGridEl.innerHTML = "";
+
+    // Show the 8 most recent sheets
+    const newest = sheets.slice(0, 8);
+
+    newest.forEach((sheet) => {
+      const card = createNewCard(sheet);
+      newGridEl.appendChild(card);
+    });
+  }
+
+  // -------------------------------
+  // Card creators
+  // -------------------------------
+
+  // Common utility: create an image element with explicit dimensions
+  function createSheetImage(sheet) {
+    const img = document.createElement("img");
+    img.src = sheet.thumb || sheet.image;
+    img.alt = (sheet.title || "Printable coloring page") + " - Little Color Lab";
+    img.loading = "lazy";
+
+    // Explicit dimensions for CLS (tweak if you like)
+    img.width = 260;
+    img.height = 340;
+
+    return img;
+  }
+
+  function createSheetCard(sheet) {
+    const card = document.createElement("article");
+    card.className = "sheet-card";
+
+    const imageWrapper = document.createElement("div");
+    imageWrapper.className = "sheet-card-image";
+
+    // image with width/height
+    const img = createSheetImage(sheet);
+    imageWrapper.appendChild(img);
+
+    const title = document.createElement("h3");
+    title.className = "sheet-card-title";
+    title.textContent = sheet.title || "Coloring Page";
+
+    const meta = document.createElement("p");
+    meta.className = "sheet-card-meta";
+    meta.textContent = sheet.category ? `${sheet.category} coloring page` : "Coloring page";
+
+    const actions = document.createElement("div");
+    actions.className = "sheet-card-actions";
+
+    const pdfBtn = document.createElement("a");
+    pdfBtn.href = sheet.pdf;
+    pdfBtn.className = "btn-secondary";
+    pdfBtn.textContent = "Download PDF";
+    pdfBtn.setAttribute("target", "_blank");
+    pdfBtn.setAttribute("rel", "noopener");
+
+    const imgBtn = document.createElement("a");
+    imgBtn.href = sheet.image;
+    imgBtn.className = "btn-outline";
+    imgBtn.textContent = "View Image";
+    imgBtn.setAttribute("target", "_blank");
+    imgBtn.setAttribute("rel", "noopener");
+
+    actions.appendChild(pdfBtn);
+    actions.appendChild(imgBtn);
+
+    card.appendChild(imageWrapper);
+    card.appendChild(title);
+    card.appendChild(meta);
+    card.appendChild(actions);
+
+    return card;
+  }
+
+  function createNewCard(sheet) {
+    const card = document.createElement("article");
+    card.className = "new-card";
+
+    // thumbnail image with explicit dimensions
+    const img = createSheetImage(sheet);
+    card.appendChild(img);
+
+    const title = document.createElement("h3");
+    title.className = "new-card-title";
+    title.textContent = sheet.title || "Coloring Page";
+
+    const meta = document.createElement("p");
+    meta.className = "new-card-meta";
+    meta.textContent = sheet.category ? `${sheet.category} coloring page` : "Coloring page";
+
+    const actions = document.createElement("div");
+    actions.className = "new-card-actions";
+
+    const btn = document.createElement("a");
+    btn.href = sheet.pdf;
+    btn.className = "new-btn";
+    btn.textContent = "Download PDF";
+    btn.setAttribute("target", "_blank");
+    btn.setAttribute("rel", "noopener");
+
+    actions.appendChild(btn);
+
+    card.appendChild(title);
+    card.appendChild(meta);
+    card.appendChild(actions);
+
+    return card;
+  }
+});
