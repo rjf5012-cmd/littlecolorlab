@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Category buttons
   // -------------------------------
   function buildCategoryButtons(sheets) {
-    const categories = Array.from(
-      new Set(sheets.map((s) => s.category).filter(Boolean))
-    ).sort();
+    const categories = Array.from(new Set(sheets.map((s) => s.category).filter(Boolean))).sort();
 
     // "All" button
     const allBtn = document.createElement("button");
@@ -84,11 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateCategoryActiveState(category) {
     const buttons = categoryButtonsEl.querySelectorAll(".category-btn");
     buttons.forEach((btn) => {
-      if (btn.dataset.category === category) {
-        btn.classList.add("active");
-      } else {
-        btn.classList.remove("active");
-      }
+      btn.classList.toggle("active", btn.dataset.category === category);
     });
   }
 
@@ -105,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyFilters() {
     filteredSheets = allSheets.filter((sheet) => {
       const matchesCategory = !activeCategory || sheet.category === activeCategory;
-
       if (!matchesCategory) return false;
 
       if (!searchTerm) return true;
@@ -159,18 +152,30 @@ document.addEventListener("DOMContentLoaded", () => {
   // Card creators
   // -------------------------------
 
-  // Common utility: create an image element with explicit dimensions
+  // Create an image element with safe explicit dimensions (square thumbs)
   function createSheetImage(sheet) {
     const img = document.createElement("img");
     img.src = sheet.thumb || sheet.image;
     img.alt = (sheet.title || "Printable coloring page") + " - Little Color Lab";
     img.loading = "lazy";
 
-    // Explicit dimensions for CLS (tweak if you like)
-    img.width = 260;
-    img.height = 340;
+    // Use square to avoid stretching portrait/square sources
+    // (Frame will handle consistent layout)
+    img.width = 300;
+    img.height = 300;
 
     return img;
+  }
+
+  // Wrap image in a frame so layout is consistent without distortion
+  function createThumbFrame(sheet) {
+    const frame = document.createElement("div");
+    frame.className = "thumb-frame";
+
+    const img = createSheetImage(sheet);
+    frame.appendChild(img);
+
+    return frame;
   }
 
   function createSheetCard(sheet) {
@@ -180,9 +185,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageWrapper = document.createElement("div");
     imageWrapper.className = "sheet-card-image";
 
-    // image with width/height
-    const img = createSheetImage(sheet);
-    imageWrapper.appendChild(img);
+    // framed thumbnail (prevents stretching)
+    imageWrapper.appendChild(createThumbFrame(sheet));
 
     const title = document.createElement("h3");
     title.className = "sheet-card-title";
@@ -224,9 +228,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const card = document.createElement("article");
     card.className = "new-card";
 
-    // thumbnail image with explicit dimensions
-    const img = createSheetImage(sheet);
-    card.appendChild(img);
+    // framed thumbnail (prevents stretching)
+    card.appendChild(createThumbFrame(sheet));
 
     const title = document.createElement("h3");
     title.className = "new-card-title";
