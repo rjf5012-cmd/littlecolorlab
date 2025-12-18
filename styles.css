@@ -125,12 +125,13 @@ main {
   max-width: 640px;
 }
 
+/* ✅ FIX: give the paragraph breathing room + remove fixed width */
 .hero p {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 1.25rem;  /* <-- prevents button from crowding/overlapping */
   font-size: 1rem;
   line-height: 1.6;
-  width: 480px;
+  width: 100%;             /* <-- no fixed 480px */
 }
 
 /* ------------------------------ */
@@ -282,6 +283,19 @@ main {
 .new-card-title {
   font-size: 0.95rem;
   font-weight: 600;
+}
+
+/* ------------------------------ */
+/* About Section Image Fix        */
+/* ------------------------------ */
+
+/* ✅ FIX: keep About logo from being enormous */
+.footer-logo {
+  height: 140px;
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
+  margin: 0 auto 1rem auto;
 }
 
 /* ------------------------------ */
